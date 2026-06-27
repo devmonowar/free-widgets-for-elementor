@@ -1,0 +1,42 @@
+/**
+ * Free Widgets For Elementor — Testimonial widget.
+ */
+
+.fwfe-testimonial {
+	padding: var( --fwfe-spacing-lg, 24px );
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: var( --fwfe-border-radius, 8px );
+	box-shadow: var( --fwfe-shadow, 0 1px 3px rgba( 0, 0, 0, 0.06 ) );
+}
+
+.fwfe-testimonial__content {
+	margin-bottom: var( --fwfe-spacing-md, 16px );
+	color: var( --fwfe-text-color, #1f2937 );
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.fwfe-testimonial__meta {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.fwfe-testimonial__image img {
+	width: 56px;
+	height: 56px;
+	object-fit: cover;
+	border-radius: 50%;
+	display: block;
+}
+
+.fwfe-testimonial__name {
+	font-weight: 700;
+	color: var( --fwfe-text-color, #1f2937 );
+}
+
+.fwfe-testimonial__title {
+	font-size: 14px;
+	color: #6b7280;
+}

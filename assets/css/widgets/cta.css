@@ -1,0 +1,49 @@
+/**
+ * Free Widgets For Elementor — Call To Action widget.
+ */
+
+.fwfe-cta {
+	padding: 48px 32px;
+	border-radius: var( --fwfe-border-radius, 8px );
+	background-color: var( --fwfe-primary-color, #6366f1 );
+}
+
+.fwfe-cta__title {
+	margin: 0 0 12px;
+	color: #fff;
+}
+
+.fwfe-cta__description {
+	margin: 0 0 24px;
+	color: rgba( 255, 255, 255, 0.85 );
+}
+
+.fwfe-cta__button {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 28px;
+	border-radius: var( --fwfe-border-radius, 4px );
+	background: #fff;
+	color: var( --fwfe-primary-color, #6366f1 );
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.fwfe-cta__button:hover,
+.fwfe-cta__button:focus {
+	text-decoration: none;
+}
+
+.fwfe-cta__button-icon {
+	display: inline-flex;
+	align-items: center;
+	line-height: 0;
+}
+
+.fwfe-cta__button-icon svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}

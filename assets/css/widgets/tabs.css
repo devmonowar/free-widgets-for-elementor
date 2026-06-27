@@ -1,0 +1,68 @@
+/**
+ * Free Widgets For Elementor — Tabs widget.
+ */
+
+.fwfe-tabs__nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.fwfe-tabs__tab {
+	padding: 12px 18px;
+	border: 0;
+	border-bottom: 2px solid transparent;
+	margin-bottom: -1px;
+	background: transparent;
+	font: inherit;
+	color: var( --fwfe-text-color, #1f2937 );
+	cursor: pointer;
+}
+
+.fwfe-tabs__tab[aria-selected="true"] {
+	border-bottom-color: var( --fwfe-primary-color, #6366f1 );
+	color: var( --fwfe-primary-color, #6366f1 );
+}
+
+.fwfe-tabs__tab:focus-visible {
+	outline: 2px solid var( --fwfe-primary-color, #6366f1 );
+	outline-offset: -2px;
+}
+
+.fwfe-tabs__panel {
+	padding: 20px;
+}
+
+.fwfe-tabs__panel[hidden] {
+	display: none;
+}
+
+/* Vertical layout */
+.fwfe-tabs--vertical .fwfe-tabs {
+	display: flex;
+	gap: 16px;
+}
+
+.fwfe-tabs--vertical .fwfe-tabs__nav {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	border-bottom: 0;
+	border-right: 1px solid #e5e7eb;
+}
+
+.fwfe-tabs--vertical .fwfe-tabs__tab {
+	border-bottom: 0;
+	border-right: 2px solid transparent;
+	margin-bottom: 0;
+	margin-right: -1px;
+	text-align: left;
+}
+
+.fwfe-tabs--vertical .fwfe-tabs__tab[aria-selected="true"] {
+	border-right-color: var( --fwfe-primary-color, #6366f1 );
+}
+
+.fwfe-tabs--vertical .fwfe-tabs__panels {
+	flex: 1;
+}

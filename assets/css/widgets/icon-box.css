@@ -1,0 +1,61 @@
+/**
+ * Free Widgets For Elementor — Icon Box widget.
+ */
+
+.fwfe-icon-box {
+	display: flex;
+	gap: 16px;
+}
+
+.fwfe-icon-box__icon-wrap {
+	flex-shrink: 0;
+}
+
+.fwfe-icon-box__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
+	color: var( --fwfe-primary-color, #6366f1 );
+}
+
+.fwfe-icon-box__icon svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.fwfe-icon-box__content {
+	flex: 1;
+}
+
+.fwfe-icon-box__title {
+	margin: 0 0 10px;
+}
+
+.fwfe-icon-box__description {
+	margin: 0;
+	color: var( --fwfe-text-color, #1f2937 );
+}
+
+.fwfe-icon-box__link {
+	color: inherit;
+	text-decoration: none;
+}
+
+/* Icon position (modifier added to the widget wrapper). */
+.fwfe-icon-box--top .fwfe-icon-box {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.fwfe-icon-box--left .fwfe-icon-box {
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.fwfe-icon-box--right .fwfe-icon-box {
+	flex-direction: row-reverse;
+	align-items: flex-start;
+}

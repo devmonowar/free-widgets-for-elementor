@@ -1,0 +1,55 @@
+/**
+ * Free Widgets For Elementor — Team widget.
+ */
+
+.fwfe-team {
+	text-align: center;
+}
+
+.fwfe-team__image {
+	margin-bottom: var( --fwfe-spacing-md, 16px );
+}
+
+.fwfe-team__image img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.fwfe-team__name {
+	margin: 0 0 4px;
+	color: var( --fwfe-text-color, #1f2937 );
+}
+
+.fwfe-team__position {
+	color: var( --fwfe-primary-color, #6366f1 );
+	font-size: 14px;
+	margin-bottom: var( --fwfe-spacing-sm, 8px );
+}
+
+.fwfe-team__bio {
+	margin: 0 0 var( --fwfe-spacing-md, 16px );
+	color: var( --fwfe-text-color, #1f2937 );
+}
+
+/* inline-flex so the social row follows the widget's text-align */
+.fwfe-team__social {
+	display: inline-flex;
+	gap: 12px;
+}
+
+.fwfe-team__social-link {
+	display: inline-flex;
+	align-items: center;
+	color: var( --fwfe-text-color, #1f2937 );
+	text-decoration: none;
+	line-height: 1;
+}
+
+.fwfe-team__social-link svg {
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}

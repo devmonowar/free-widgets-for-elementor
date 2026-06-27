@@ -1,0 +1,897 @@
+# Copyright (C) 2026 Monowar
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Free Widgets For Elementor 2.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/free-widgets-for-elementor\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-27T18:40:45+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: free-widgets-for-elementor\n"
+
+#. Plugin Name of the plugin
+#: free-widgets-for-elementor.php
+#: includes/Admin/Dashboard.php:34
+#: includes/Core/Plugin.php:95
+msgid "Free Widgets For Elementor"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: free-widgets-for-elementor.php
+msgid "https://wordpress.org/plugins/free-widgets-for-elementor/"
+msgstr ""
+
+#. Description of the plugin
+#: free-widgets-for-elementor.php
+msgid "A lightweight, 100% free collection of essential Elementor widgets. Performance-first, accessible, and built with clean code. No upsells, ever."
+msgstr ""
+
+#. Author of the plugin
+#: free-widgets-for-elementor.php
+msgid "Monowar"
+msgstr ""
+
+#. Author URI of the plugin
+#: free-widgets-for-elementor.php
+msgid "https://profiles.wordpress.org/devmonowar/"
+msgstr ""
+
+#: includes/Admin/Dashboard.php:35
+msgid "100% free, performance-first Elementor widgets. No upsells, ever."
+msgstr ""
+
+#: includes/Admin/Dashboard.php:40
+msgid "Widgets enabled"
+msgstr ""
+
+#: includes/Admin/Dashboard.php:41
+msgid "Manage Widgets"
+msgstr ""
+
+#: includes/Admin/Dashboard.php:44
+#: includes/Hooks/Admin.php:78
+#: includes/Hooks/Admin.php:79
+msgid "Settings"
+msgstr ""
+
+#: includes/Admin/Dashboard.php:45
+msgid "General, performance, developer & global design."
+msgstr ""
+
+#: includes/Admin/Dashboard.php:46
+msgid "Open Settings"
+msgstr ""
+
+#: includes/Admin/Dashboard.php:49
+#: includes/Hooks/Admin.php:87
+#: includes/Hooks/Admin.php:88
+msgid "System Info"
+msgstr ""
+
+#: includes/Admin/Dashboard.php:50
+msgid "Environment details for troubleshooting."
+msgstr ""
+
+#: includes/Admin/Dashboard.php:51
+msgid "View System Info"
+msgstr ""
+
+#: includes/Admin/Dashboard.php:55
+msgid "Available widgets"
+msgstr ""
+
+#: includes/Admin/Settings.php:32
+msgid "General"
+msgstr ""
+
+#: includes/Admin/Settings.php:33
+msgid "Performance"
+msgstr ""
+
+#: includes/Admin/Settings.php:34
+msgid "Developer"
+msgstr ""
+
+#: includes/Admin/Settings.php:35
+msgid "Global Design"
+msgstr ""
+
+#: includes/Admin/Settings.php:60
+msgid "Free Widgets — Settings"
+msgstr ""
+
+#: includes/Admin/Settings.php:104
+msgid "Enable SVG"
+msgstr ""
+
+#: includes/Admin/Settings.php:108
+msgid "Allow inline SVG icons in widgets."
+msgstr ""
+
+#: includes/Admin/Settings.php:113
+msgid "Load Font Awesome"
+msgstr ""
+
+#: includes/Admin/Settings.php:117
+msgid "Enqueue Font Awesome (off by default for performance)."
+msgstr ""
+
+#: includes/Admin/Settings.php:135
+msgid "Conditional Asset Loading"
+msgstr ""
+
+#: includes/Admin/Settings.php:139
+msgid "Load a widget's CSS/JS only on pages that use it (recommended)."
+msgstr ""
+
+#: includes/Admin/Settings.php:157
+msgid "Debug Mode"
+msgstr ""
+
+#: includes/Admin/Settings.php:161
+msgid "Enable extra debugging output for development."
+msgstr ""
+
+#: includes/Admin/Settings.php:166
+msgid "Clear Cache"
+msgstr ""
+
+#: includes/Admin/Settings.php:169
+msgid "Clear plugin cache"
+msgstr ""
+
+#: includes/Admin/Settings.php:187
+msgid "Default Border Radius"
+msgstr ""
+
+#: includes/Admin/Settings.php:191
+msgid "Default Box Shadow"
+msgstr ""
+
+#: includes/Admin/Settings.php:195
+msgid "Default Font Family"
+msgstr ""
+
+#: includes/Admin/Settings.php:211
+msgid "Settings saved."
+msgstr ""
+
+#: includes/Admin/Settings.php:213
+msgid "Cache cleared."
+msgstr ""
+
+#: includes/Admin/Settings.php:224
+#: includes/Admin/Settings.php:271
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/Admin/System_Info.php:35
+msgid "Plugin version"
+msgstr ""
+
+#: includes/Admin/System_Info.php:36
+msgid "WordPress version"
+msgstr ""
+
+#: includes/Admin/System_Info.php:37
+msgid "Elementor version"
+msgstr ""
+
+#: includes/Admin/System_Info.php:37
+msgid "Not active"
+msgstr ""
+
+#: includes/Admin/System_Info.php:38
+msgid "PHP version"
+msgstr ""
+
+#: includes/Admin/System_Info.php:39
+msgid "Memory limit"
+msgstr ""
+
+#: includes/Admin/System_Info.php:40
+msgid "Max input vars"
+msgstr ""
+
+#: includes/Admin/System_Info.php:41
+msgid "Server software"
+msgstr ""
+
+#: includes/Admin/System_Info.php:42
+msgid "WP debug mode"
+msgstr ""
+
+#: includes/Admin/System_Info.php:42
+#: includes/Widgets/Counter/Widget.php:126
+msgid "On"
+msgstr ""
+
+#: includes/Admin/System_Info.php:42
+#: includes/Widgets/Counter/Widget.php:127
+msgid "Off"
+msgstr ""
+
+#: includes/Admin/System_Info.php:46
+msgid "Free Widgets — System Info"
+msgstr ""
+
+#: includes/Admin/Widgets_Manager.php:38
+msgid "Free Widgets — Widgets"
+msgstr ""
+
+#: includes/Admin/Widgets_Manager.php:39
+msgid "Turn individual widgets on or off. Disabled widgets are not registered with Elementor."
+msgstr ""
+
+#: includes/Admin/Widgets_Manager.php:54
+msgid "Enabled"
+msgstr ""
+
+#: includes/Admin/Widgets_Manager.php:62
+msgid "Save Widgets"
+msgstr ""
+
+#. translators: 1: plugin name, 2: required Elementor version.
+#: includes/Core/Plugin.php:94
+#, php-format
+msgid "%1$s requires Elementor (version %2$s or higher) to be installed and activated."
+msgstr ""
+
+#: includes/Helpers/Helper.php:31
+#: includes/Widgets/Heading/Widget.php:46
+#: includes/Widgets/Heading/Widget.php:78
+#: includes/Widgets/Heading/Widget.php:160
+msgid "Heading"
+msgstr ""
+
+#: includes/Helpers/Helper.php:32
+#: includes/Widgets/Button/Widget.php:39
+#: includes/Widgets/Button/Widget.php:71
+#: includes/Widgets/Button/Widget.php:185
+#: includes/Widgets/Cta/Widget.php:292
+msgid "Button"
+msgstr ""
+
+#: includes/Helpers/Helper.php:33
+#: includes/Widgets/Image/Widget.php:39
+#: includes/Widgets/Image/Widget.php:71
+#: includes/Widgets/Image/Widget.php:177
+#: includes/Widgets/Testimonial/Widget.php:88
+msgid "Image"
+msgstr ""
+
+#: includes/Helpers/Helper.php:34
+#: includes/Widgets/IconBox/Widget.php:46
+#: includes/Widgets/IconBox/Widget.php:78
+msgid "Icon Box"
+msgstr ""
+
+#: includes/Helpers/Helper.php:35
+#: includes/Widgets/Counter/Widget.php:36
+#: includes/Widgets/Counter/Widget.php:68
+msgid "Counter"
+msgstr ""
+
+#: includes/Helpers/Helper.php:36
+#: includes/Widgets/Team/Widget.php:48
+msgid "Team"
+msgstr ""
+
+#: includes/Helpers/Helper.php:37
+#: includes/Widgets/Testimonial/Widget.php:37
+#: includes/Widgets/Testimonial/Widget.php:69
+msgid "Testimonial"
+msgstr ""
+
+#: includes/Helpers/Helper.php:38
+#: includes/Widgets/Accordion/Widget.php:47
+#: includes/Widgets/Accordion/Widget.php:79
+msgid "Accordion"
+msgstr ""
+
+#: includes/Helpers/Helper.php:39
+#: includes/Widgets/Tabs/Widget.php:37
+#: includes/Widgets/Tabs/Widget.php:69
+#: includes/Widgets/Tabs/Widget.php:98
+#: includes/Widgets/Tabs/Widget.php:135
+#: includes/Widgets/Tabs/Widget.php:250
+msgid "Tabs"
+msgstr ""
+
+#: includes/Helpers/Helper.php:40
+#: includes/Widgets/Cta/Widget.php:47
+#: includes/Widgets/Cta/Widget.php:79
+msgid "Call To Action"
+msgstr ""
+
+#: includes/Hooks/Admin.php:49
+#: includes/Hooks/Admin.php:50
+#: includes/Hooks/Elementor.php:44
+msgid "Free Widgets"
+msgstr ""
+
+#: includes/Hooks/Admin.php:60
+#: includes/Hooks/Admin.php:61
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Hooks/Admin.php:69
+#: includes/Hooks/Admin.php:70
+msgid "Widgets"
+msgstr ""
+
+#: includes/Hooks/Admin.php:96
+#: includes/Hooks/Admin.php:97
+msgid "Documentation"
+msgstr ""
+
+#: includes/Hooks/Admin.php:104
+#: includes/Hooks/Admin.php:105
+msgid "Support"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:89
+#: includes/Widgets/Counter/Widget.php:135
+#: includes/Widgets/Counter/Widget.php:205
+#: includes/Widgets/Cta/Widget.php:87
+#: includes/Widgets/Heading/Widget.php:86
+#: includes/Widgets/IconBox/Widget.php:98
+#: includes/Widgets/Tabs/Widget.php:79
+#: includes/Widgets/Testimonial/Widget.php:107
+msgid "Title"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:91
+msgid "Accordion Title"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:99
+#: includes/Widgets/Accordion/Widget.php:246
+#: includes/Widgets/Cta/Widget.php:238
+#: includes/Widgets/IconBox/Widget.php:255
+#: includes/Widgets/Tabs/Widget.php:89
+#: includes/Widgets/Tabs/Widget.php:188
+#: includes/Widgets/Testimonial/Widget.php:77
+msgid "Content"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:101
+msgid "Accordion content goes here. Edit this text."
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:108
+msgid "Items"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:114
+msgid "Accordion Item #1"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:115
+msgid "Content for the first item."
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:118
+msgid "Accordion Item #2"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:119
+msgid "Content for the second item."
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:128
+#: includes/Widgets/Cta/Widget.php:97
+#: includes/Widgets/IconBox/Widget.php:118
+msgid "Title HTML Tag"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:145
+msgid "Open First Item"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:155
+#: includes/Widgets/Button/Widget.php:115
+#: includes/Widgets/IconBox/Widget.php:86
+#: includes/Widgets/IconBox/Widget.php:175
+#: includes/Widgets/Team/Widget.php:147
+msgid "Icon"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:167
+msgid "Active Icon"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:182
+msgid "Header"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:190
+#: includes/Widgets/Accordion/Widget.php:254
+#: includes/Widgets/Counter/Widget.php:182
+#: includes/Widgets/Counter/Widget.php:213
+#: includes/Widgets/IconBox/Widget.php:203
+#: includes/Widgets/IconBox/Widget.php:223
+#: includes/Widgets/Tabs/Widget.php:196
+msgid "Color"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:201
+msgid "Active Color"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:212
+msgid "Background"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:231
+#: includes/Widgets/Accordion/Widget.php:273
+#: includes/Widgets/Button/Widget.php:294
+#: includes/Widgets/Cta/Widget.php:203
+#: includes/Widgets/Cta/Widget.php:364
+#: includes/Widgets/Tabs/Widget.php:215
+msgid "Padding"
+msgstr ""
+
+#: includes/Widgets/Accordion/Widget.php:293
+msgid "Border Color"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:79
+msgid "Text"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:82
+msgid "Click Here"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:89
+#: includes/Widgets/Heading/Widget.php:97
+#: includes/Widgets/IconBox/Widget.php:138
+#: includes/Widgets/Image/Widget.php:148
+#: includes/Widgets/Team/Widget.php:159
+msgid "Link"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:92
+#: includes/Widgets/Cta/Widget.php:140
+#: includes/Widgets/Heading/Widget.php:100
+#: includes/Widgets/IconBox/Widget.php:141
+#: includes/Widgets/Image/Widget.php:165
+#: includes/Widgets/Team/Widget.php:161
+msgid "https://your-link.com"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:100
+#: includes/Widgets/IconBox/Widget.php:183
+msgid "Size"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:104
+msgid "Small"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:105
+msgid "Medium"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:106
+msgid "Large"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:107
+msgid "Extra Large"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:125
+#: includes/Widgets/IconBox/Widget.php:148
+msgid "Icon Position"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:129
+msgid "Before"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:130
+msgid "After"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:142
+msgid "Icon Spacing"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:156
+#: includes/Widgets/Counter/Widget.php:145
+#: includes/Widgets/Cta/Widget.php:157
+#: includes/Widgets/Heading/Widget.php:128
+#: includes/Widgets/Image/Widget.php:97
+#: includes/Widgets/Team/Widget.php:179
+#: includes/Widgets/Testimonial/Widget.php:117
+msgid "Alignment"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:160
+#: includes/Widgets/Counter/Widget.php:149
+#: includes/Widgets/Cta/Widget.php:161
+#: includes/Widgets/Heading/Widget.php:132
+#: includes/Widgets/IconBox/Widget.php:153
+#: includes/Widgets/Image/Widget.php:101
+#: includes/Widgets/Team/Widget.php:183
+#: includes/Widgets/Testimonial/Widget.php:121
+msgid "Left"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:164
+#: includes/Widgets/Counter/Widget.php:153
+#: includes/Widgets/Cta/Widget.php:165
+#: includes/Widgets/Heading/Widget.php:136
+#: includes/Widgets/Image/Widget.php:105
+#: includes/Widgets/Team/Widget.php:187
+#: includes/Widgets/Testimonial/Widget.php:125
+msgid "Center"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:168
+#: includes/Widgets/Counter/Widget.php:157
+#: includes/Widgets/Cta/Widget.php:169
+#: includes/Widgets/Heading/Widget.php:140
+#: includes/Widgets/IconBox/Widget.php:161
+#: includes/Widgets/Image/Widget.php:109
+#: includes/Widgets/Team/Widget.php:191
+#: includes/Widgets/Testimonial/Widget.php:129
+msgid "Right"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:202
+#: includes/Widgets/Cta/Widget.php:301
+#: includes/Widgets/Heading/Widget.php:169
+#: includes/Widgets/IconBox/Widget.php:197
+msgid "Normal"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:208
+#: includes/Widgets/Button/Widget.php:239
+#: includes/Widgets/Cta/Widget.php:307
+#: includes/Widgets/Cta/Widget.php:338
+#: includes/Widgets/Heading/Widget.php:175
+#: includes/Widgets/Heading/Widget.php:193
+msgid "Text Color"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:220
+#: includes/Widgets/Button/Widget.php:250
+#: includes/Widgets/Cta/Widget.php:319
+#: includes/Widgets/Cta/Widget.php:349
+msgid "Background Color"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:233
+#: includes/Widgets/Cta/Widget.php:332
+#: includes/Widgets/Heading/Widget.php:187
+#: includes/Widgets/IconBox/Widget.php:217
+msgid "Hover"
+msgstr ""
+
+#: includes/Widgets/Button/Widget.php:274
+#: includes/Widgets/Cta/Widget.php:223
+#: includes/Widgets/Image/Widget.php:222
+msgid "Border Radius"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:76
+msgid "Starting Number"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:85
+msgid "Ending Number"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:94
+msgid "Number Prefix"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:103
+msgid "Number Suffix"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:112
+msgid "Animation Duration (ms)"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:123
+msgid "Thousand Separator"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:138
+msgid "Happy Customers"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:174
+msgid "Number"
+msgstr ""
+
+#: includes/Widgets/Counter/Widget.php:232
+#: includes/Widgets/IconBox/Widget.php:239
+msgid "Spacing"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:90
+msgid "Ready to get started?"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:117
+#: includes/Widgets/IconBox/Widget.php:108
+msgid "Description"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:120
+msgid "Join thousands of happy users today. It only takes a minute."
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:127
+msgid "Button Text"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:130
+msgid "Get Started"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:137
+msgid "Button Link"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:148
+msgid "Button Icon"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:186
+msgid "Box"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:246
+#: includes/Widgets/IconBox/Widget.php:263
+#: includes/Widgets/Tabs/Widget.php:143
+#: includes/Widgets/Testimonial/Widget.php:199
+msgid "Title Color"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:259
+#: includes/Widgets/IconBox/Widget.php:275
+msgid "Title Typography"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:267
+#: includes/Widgets/IconBox/Widget.php:296
+msgid "Description Color"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:281
+#: includes/Widgets/IconBox/Widget.php:309
+msgid "Description Typography"
+msgstr ""
+
+#: includes/Widgets/Heading/Widget.php:89
+msgid "Enter your title"
+msgstr ""
+
+#: includes/Widgets/Heading/Widget.php:90
+msgid "Add Your Heading Text Here"
+msgstr ""
+
+#: includes/Widgets/Heading/Widget.php:108
+msgid "HTML Tag"
+msgstr ""
+
+#: includes/Widgets/Heading/Widget.php:144
+msgid "Justified"
+msgstr ""
+
+#: includes/Widgets/Heading/Widget.php:204
+msgid "Transition Duration (s)"
+msgstr ""
+
+#: includes/Widgets/IconBox/Widget.php:101
+msgid "This is the heading"
+msgstr ""
+
+#: includes/Widgets/IconBox/Widget.php:111
+msgid "Click edit button to change this text. Lorem ipsum dolor sit amet."
+msgstr ""
+
+#: includes/Widgets/IconBox/Widget.php:157
+msgid "Top"
+msgstr ""
+
+#: includes/Widgets/IconBox/Widget.php:283
+msgid "Title Spacing"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:79
+msgid "Choose Image"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:123
+msgid "Caption"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:127
+#: includes/Widgets/Image/Widget.php:152
+msgid "None"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:128
+msgid "Attachment Caption"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:129
+#: includes/Widgets/Image/Widget.php:137
+msgid "Custom Caption"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:153
+msgid "Media File"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:154
+#: includes/Widgets/Image/Widget.php:162
+msgid "Custom URL"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:185
+msgid "Width"
+msgstr ""
+
+#: includes/Widgets/Image/Widget.php:201
+msgid "Opacity"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:81
+msgid "Tab Title"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:91
+msgid "Tab content goes here. Edit this text."
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:104
+msgid "Tab #1"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:105
+msgid "Content for the first tab."
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:108
+msgid "Tab #2"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:109
+msgid "Content for the second tab."
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:118
+msgid "Layout"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:122
+msgid "Horizontal"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:123
+msgid "Vertical"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:154
+msgid "Active Title Color"
+msgstr ""
+
+#: includes/Widgets/Tabs/Widget.php:165
+msgid "Active Indicator Color"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:80
+msgid "Team Member"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:88
+msgid "Photo"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:97
+#: includes/Widgets/Testimonial/Widget.php:97
+msgid "Name"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:100
+msgid "John Doe"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:107
+msgid "Position"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:110
+msgid "CEO & Founder"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:117
+msgid "Bio"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:120
+msgid "A short bio about this team member."
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:127
+msgid "Name HTML Tag"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:168
+msgid "Social Links"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:208
+#: includes/Widgets/Testimonial/Widget.php:146
+msgid "Style"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:216
+msgid "Photo Size"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:229
+msgid "Photo Radius"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:243
+#: includes/Widgets/Testimonial/Widget.php:188
+msgid "Name Color"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:256
+msgid "Name Typography"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:264
+msgid "Position Color"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:276
+msgid "Bio Color"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:287
+msgid "Social Icon Color"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:300
+msgid "Social Icon Size"
+msgstr ""
+
+#: includes/Widgets/Testimonial/Widget.php:81
+msgid "This product completely changed how our team works. Highly recommended!"
+msgstr ""
+
+#: includes/Widgets/Testimonial/Widget.php:100
+msgid "Jane Smith"
+msgstr ""
+
+#: includes/Widgets/Testimonial/Widget.php:110
+msgid "Marketing Director"
+msgstr ""
+
+#: includes/Widgets/Testimonial/Widget.php:154
+msgid "Content Color"
+msgstr ""
+
+#: includes/Widgets/Testimonial/Widget.php:166
+msgid "Content Typography"
+msgstr ""
+
+#: includes/Widgets/Testimonial/Widget.php:174
+msgid "Image Size"
+msgstr ""

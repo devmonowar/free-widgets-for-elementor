@@ -1,0 +1,73 @@
+/**
+ * Free Widgets For Elementor — admin styles.
+ */
+
+.fwfe-wrap .fwfe-tagline {
+	font-size: 14px;
+	color: #50575e;
+	margin: 4px 0 20px;
+}
+
+.fwfe-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 16px 0 28px;
+}
+
+.fwfe-card {
+	flex: 1 1 220px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.04 );
+}
+
+.fwfe-card h2 {
+	margin: 0 0 4px;
+	font-size: 22px;
+}
+
+.fwfe-card p {
+	color: #50575e;
+	margin: 0 0 14px;
+	min-height: 38px;
+}
+
+.fwfe-widget-list {
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax( 180px, 1fr ) );
+	gap: 8px 24px;
+	max-width: 760px;
+	margin-top: 8px;
+}
+
+.fwfe-widget-list li {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.fwfe-dot {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	margin-right: 9px;
+	background: #c3c4c7;
+}
+
+.fwfe-dot.is-on {
+	background: #46b450;
+}
+
+.fwfe-dot.is-off {
+	background: #d63638;
+}
+
+.fwfe-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}

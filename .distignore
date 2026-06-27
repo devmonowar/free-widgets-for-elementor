@@ -1,0 +1,11 @@
+# Directories / files that must NOT ship to the WordPress.org SVN repo.
+/.git
+/.github
+/.wordpress-org
+/node_modules
+/.gitignore
+/.distignore
+/.gitattributes
+/phpcs.xml.dist
+/plan.txt
+/README.md

@@ -1,0 +1,14 @@
+/**
+ * Free Widgets For Elementor — shared frontend base.
+ * Loaded only on pages where a Free Widget is present (dependency of widget CSS).
+ */
+
+:root {
+	--fwfe-border-radius: 0px;
+	--fwfe-shadow: none;
+	--fwfe-primary-color: #6366f1;
+	--fwfe-text-color: #1f2937;
+	--fwfe-spacing-sm: 8px;
+	--fwfe-spacing-md: 16px;
+	--fwfe-spacing-lg: 24px;
+}
