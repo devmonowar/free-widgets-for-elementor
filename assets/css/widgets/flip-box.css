@@ -1,0 +1,215 @@
+/**
+ * Free Widgets For Elementor — Flip Box.
+ *
+ * Structural defaults only. Colours, typography, radius, shadow, padding and
+ * min-height are driven by the Style-tab controls (Elementor `selectors`), which
+ * override these. The 3D flip is a transform on `__inner`; direction modifiers
+ * change the rotation axis. Hover trigger is pure CSS; click trigger is handled
+ * by flip-box.js toggling `.is-flipped`.
+ */
+
+.fwfe-flip-box {
+	position: relative;
+	min-height: 320px;
+	perspective: 1400px;
+}
+
+.fwfe-flip-box__inner {
+	position: absolute;
+	inset: 0;
+	transform-style: preserve-3d;
+	transition: transform 0.6s ease;
+}
+
+.fwfe-flip-box__face {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 28px 24px;
+	border-radius: 12px;
+	overflow: auto;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.fwfe-flip-box__front {
+	background: #6366f1;
+	color: #fff;
+}
+
+.fwfe-flip-box__back {
+	background: #111827;
+	color: #d1d5db;
+}
+
+.fwfe-flip-box__face-content {
+	width: 100%;
+}
+
+/* ---- Elements ---- */
+.fwfe-flip-box__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 14px;
+	font-size: 44px;
+	line-height: 1;
+	color: #fff;
+}
+
+.fwfe-flip-box__icon svg {
+	width: 44px;
+	height: 44px;
+	fill: currentColor;
+}
+
+.fwfe-flip-box__title {
+	margin: 0 0 8px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.fwfe-flip-box__text {
+	margin: 0;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.fwfe-flip-box__button {
+	display: inline-block;
+	margin-top: 16px;
+	padding: 10px 24px;
+	border-radius: 8px;
+	background: #fff;
+	color: #111827;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.fwfe-flip-box__button:hover,
+.fwfe-flip-box__button:focus {
+	background: #6366f1;
+	color: #fff;
+}
+
+/* ---- Flip toggle (click trigger only) ---- */
+.fwfe-flip-box__flip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 16px;
+	padding: 8px 16px;
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+	font-size: 14px;
+	line-height: 1.2;
+	cursor: pointer;
+}
+
+.fwfe-flip-box__flip-icon {
+	display: inline-flex;
+}
+
+/* ---- Direction: back face resting rotation ---- */
+.fwfe-flip-box--left .fwfe-flip-box__back {
+	transform: rotateY(180deg);
+}
+
+.fwfe-flip-box--right .fwfe-flip-box__back {
+	transform: rotateY(-180deg);
+}
+
+.fwfe-flip-box--up .fwfe-flip-box__back {
+	transform: rotateX(180deg);
+}
+
+.fwfe-flip-box--down .fwfe-flip-box__back {
+	transform: rotateX(-180deg);
+}
+
+/* ---- Flip: hover trigger (pure CSS). :focus-within keeps keyboard users able
+   to reach the back-face button. ---- */
+.fwfe-flip-box--hover:hover .fwfe-flip-box__inner,
+.fwfe-flip-box--hover:focus-within .fwfe-flip-box__inner {
+	/* Overridden per-direction below. */
+	transform: rotateY(180deg);
+}
+
+.fwfe-flip-box--hover.fwfe-flip-box--right:hover .fwfe-flip-box__inner,
+.fwfe-flip-box--hover.fwfe-flip-box--right:focus-within .fwfe-flip-box__inner {
+	transform: rotateY(-180deg);
+}
+
+.fwfe-flip-box--hover.fwfe-flip-box--up:hover .fwfe-flip-box__inner,
+.fwfe-flip-box--hover.fwfe-flip-box--up:focus-within .fwfe-flip-box__inner {
+	transform: rotateX(180deg);
+}
+
+.fwfe-flip-box--hover.fwfe-flip-box--down:hover .fwfe-flip-box__inner,
+.fwfe-flip-box--hover.fwfe-flip-box--down:focus-within .fwfe-flip-box__inner {
+	transform: rotateX(-180deg);
+}
+
+/* ---- Flip: click trigger (JS toggles .is-flipped) ---- */
+.fwfe-flip-box--click.is-flipped.fwfe-flip-box--left .fwfe-flip-box__inner {
+	transform: rotateY(180deg);
+}
+
+.fwfe-flip-box--click.is-flipped.fwfe-flip-box--right .fwfe-flip-box__inner {
+	transform: rotateY(-180deg);
+}
+
+.fwfe-flip-box--click.is-flipped.fwfe-flip-box--up .fwfe-flip-box__inner {
+	transform: rotateX(180deg);
+}
+
+.fwfe-flip-box--click.is-flipped.fwfe-flip-box--down .fwfe-flip-box__inner {
+	transform: rotateX(-180deg);
+}
+
+/* ---- Reduced motion: no spin animation; cross-fade the faces instead so both
+   stay readable and the back-face button is reachable. ---- */
+@media ( prefers-reduced-motion: reduce ) {
+	.fwfe-flip-box__inner,
+	.fwfe-flip-box__button {
+		transition: none;
+	}
+
+	.fwfe-flip-box__face {
+		backface-visibility: visible;
+		-webkit-backface-visibility: visible;
+	}
+
+	/* Keep faces flat (no rotation) and toggle visibility instead of spinning. */
+	.fwfe-flip-box__back {
+		transform: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.fwfe-flip-box--hover:hover .fwfe-flip-box__inner,
+	.fwfe-flip-box--hover:focus-within .fwfe-flip-box__inner,
+	.fwfe-flip-box--click.is-flipped .fwfe-flip-box__inner {
+		transform: none;
+	}
+
+	.fwfe-flip-box--hover:hover .fwfe-flip-box__front,
+	.fwfe-flip-box--hover:focus-within .fwfe-flip-box__front,
+	.fwfe-flip-box--click.is-flipped .fwfe-flip-box__front {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.fwfe-flip-box--hover:hover .fwfe-flip-box__back,
+	.fwfe-flip-box--hover:focus-within .fwfe-flip-box__back,
+	.fwfe-flip-box--click.is-flipped .fwfe-flip-box__back {
+		opacity: 1;
+		visibility: visible;
+	}
+}

@@ -1,0 +1,162 @@
+/**
+ * Free Widgets For Elementor — Pricing Table.
+ *
+ * Structural defaults only. Colours, typography, border, padding and radius are
+ * driven by the Style-tab controls (Elementor `selectors`), which override
+ * these. Block layout (not flex) so the "Alignment" control's text-align cascades
+ * to the header, price, feature list and button.
+ */
+
+.fwfe-pricing-table {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 32px 24px;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	background: #fff;
+}
+
+/* Featured: give a visible base so the accent border-colour (from the control)
+   renders, and lift the card slightly. */
+.fwfe-pricing-table--featured {
+	border-width: 2px;
+}
+
+/* ---- Badge ---- */
+.fwfe-pricing-table__badge {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	transform: translateY(-50%);
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 999px;
+	background: #6366f1;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+/* ---- Header ---- */
+.fwfe-pricing-table__header {
+	margin-bottom: 16px;
+}
+
+.fwfe-pricing-table__title {
+	margin: 0 0 4px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.fwfe-pricing-table__subtitle {
+	margin: 0;
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+/* ---- Price ---- */
+.fwfe-pricing-table__price {
+	margin-bottom: 22px;
+}
+
+.fwfe-pricing-table__original {
+	margin-right: 6px;
+	font-size: 16px;
+	text-decoration: line-through;
+	opacity: 0.6;
+}
+
+.fwfe-pricing-table__currency {
+	font-size: 22px;
+	font-weight: 700;
+	vertical-align: top;
+	line-height: 1;
+}
+
+.fwfe-pricing-table__amount {
+	font-size: 44px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.fwfe-pricing-table__period {
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+/* ---- Features ---- */
+.fwfe-pricing-table__features {
+	margin: 0 0 24px;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+
+/* Push the button to the bottom so buttons align across cards in a row. */
+.fwfe-pricing-table__footer {
+	margin-top: auto;
+}
+
+.fwfe-pricing-table__feature {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 10px;
+}
+
+.fwfe-pricing-table__feature:last-child {
+	margin-bottom: 0;
+}
+
+.fwfe-pricing-table__feature-icon {
+	flex: 0 0 auto;
+	display: inline-flex;
+	color: #16a34a;
+}
+
+.fwfe-pricing-table__feature--excluded .fwfe-pricing-table__feature-icon {
+	color: #9ca3af;
+}
+
+.fwfe-pricing-table__feature--excluded .fwfe-pricing-table__feature-text {
+	color: #9ca3af;
+	text-decoration: line-through;
+}
+
+/* ---- Button ---- */
+.fwfe-pricing-table__button {
+	display: inline-block;
+	padding: 12px 28px;
+	border-radius: 8px;
+	background: #6366f1;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.fwfe-pricing-table__button:hover,
+.fwfe-pricing-table__button:focus {
+	background: #4f46e5;
+}
+
+/* ---- Responsive ---- */
+@media ( max-width: 480px ) {
+	.fwfe-pricing-table {
+		padding: 24px 18px;
+	}
+
+	.fwfe-pricing-table__amount {
+		font-size: 38px;
+	}
+}
+
+/* ---- Reduced motion ---- */
+@media ( prefers-reduced-motion: reduce ) {
+	.fwfe-pricing-table__button {
+		transition: none;
+	}
+}

@@ -4,7 +4,7 @@ Tags: elementor, elementor addons, elementor widgets, page builder, widgets
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 Requires Plugins: elementor
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ A lightweight, 100% free collection of essential Elementor widgets. Performance-
 
 == Description ==
 
-**Free Widgets For Elementor** adds 10 essential, hand-crafted widgets to the Elementor editor — with a strong focus on performance, accessibility and clean code. It is **100% free forever**: no Pro version, no upsells, no locked features, and no "Upgrade" buttons cluttering your editor.
+**Free Widgets For Elementor** adds 16 essential, hand-crafted widgets to the Elementor editor — with a strong focus on performance, accessibility and clean code. It is **100% free forever**: no Pro version, no upsells, no locked features, and no "Upgrade" buttons cluttering your editor.
 
 = Why you'll like it =
 
@@ -36,6 +36,12 @@ A lightweight, 100% free collection of essential Elementor widgets. Performance-
 8. **Accordion** — accessible collapsible panels with keyboard navigation.
 9. **Tabs** — accessible tabbed content (horizontal or vertical).
 10. **Call To Action** — title, description and button in a styled box.
+11. **Pricing Table** — a pricing plan with header, price, feature list and a button, with an optional "featured" highlight.
+12. **Flip Box** — a card that flips in 3D (hover or click) to reveal a back face with a call to action.
+13. **Progress Bar** — an animated skill/progress bar that fills when scrolled into view.
+14. **Countdown Timer** — counts down to a date and time, with an optional expired message.
+15. **Post Grid** — display your posts in a responsive grid (image, title, meta, excerpt and read-more).
+16. **Logo Carousel** — a responsive logo/brand carousel with arrows, dots and autoplay, powered by a lightweight built-in engine.
 
 = Admin tools =
 
@@ -80,6 +86,11 @@ Yes, all widgets are built to work inside Elementor containers.
 
 == Changelog ==
 
+= 2.0.2 =
+* New: six widgets — Pricing Table, Flip Box, Progress Bar, Countdown Timer, Post Grid and Logo Carousel.
+* New: a lightweight, reusable carousel engine that loads only on pages that use it.
+* Improved: a consistent internal structure across every widget for easier maintenance.
+
 = 2.0.1 =
 * Initial public release.
 * 10 widgets: Heading, Button, Image, Icon Box, Counter, Team, Testimonial, Accordion, Tabs, Call To Action.
@@ -88,6 +99,9 @@ Yes, all widgets are built to work inside Elementor containers.
 * Admin dashboard, per-widget manager, settings and system info.
 
 == Upgrade Notice ==
+
+= 2.0.2 =
+Adds six new widgets: Pricing Table, Flip Box, Progress Bar, Countdown Timer, Post Grid and Logo Carousel.
 
 = 2.0.1 =
 Initial release of Free Widgets For Elementor.

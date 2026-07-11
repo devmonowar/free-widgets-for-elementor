@@ -1,0 +1,33 @@
+/**
+ * WIDGET TEMPLATE — CSS skeleton.
+ *
+ * Copy to  assets/css/widgets/<slug>.css  and rename `fwfe-_template` to
+ * `fwfe-<slug>`. It auto-loads ONLY on pages using the widget, and depends on
+ * the shared base (assets/css/frontend.css) — so use its CSS variables and
+ * keep this file to structural defaults only. Anything the user should be able
+ * to change (colors, typography, spacing) is better done via Elementor
+ * `selectors` in Widget.php, not hard-coded here.
+ *
+ * Naming: BEM — .fwfe-<slug> (root), .fwfe-<slug>__part (child).
+ */
+
+.fwfe-_template {
+	/* Structural defaults only. Example: */
+	display: block;
+}
+
+.fwfe-_template__title {
+	margin: 0 0 8px;
+}
+
+.fwfe-_template__text {
+	margin: 0;
+}
+
+/* Respect reduced motion for any transition/animation you add. */
+@media ( prefers-reduced-motion: reduce ) {
+	.fwfe-_template * {
+		animation: none !important;
+		transition: none !important;
+	}
+}

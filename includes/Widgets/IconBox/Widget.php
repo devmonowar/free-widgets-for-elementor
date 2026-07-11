@@ -20,15 +20,6 @@ defined( 'ABSPATH' ) || exit;
 class Widget extends Widget_Base {
 
 	/**
-	 * Allowed title tags.
-	 *
-	 * @return array
-	 */
-	private function allowed_tags() {
-		return array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div', 'span', 'p' );
-	}
-
-	/**
 	 * Widget machine name.
 	 *
 	 * @return string
@@ -167,6 +158,16 @@ class Widget extends Widget_Base {
 		);
 
 		$this->end_controls_section();
+
+		$this->register_style_controls();
+	}
+
+	/**
+	 * Register style controls.
+	 *
+	 * @return void
+	 */
+	protected function register_style_controls() {
 
 		/* ------------------------------------------------------- Style: Icon */
 		$this->start_controls_section(
@@ -383,5 +384,14 @@ class Widget extends Widget_Base {
 		}
 
 		echo '</div>';
+	}
+
+	/**
+	 * Allowed title tags.
+	 *
+	 * @return array
+	 */
+	private function allowed_tags() {
+		return array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div', 'span', 'p' );
 	}
 }

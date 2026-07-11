@@ -178,6 +178,16 @@ class Widget extends Widget_Base {
 
 		$this->end_controls_section();
 
+		$this->register_style_controls();
+	}
+
+	/**
+	 * Register the Style-tab controls.
+	 *
+	 * @return void
+	 */
+	protected function register_style_controls() {
+
 		/* ------------------------------------------------------------ Style */
 		$this->start_controls_section(
 			'section_style',

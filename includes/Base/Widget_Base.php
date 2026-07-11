@@ -58,15 +58,28 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 	}
 
 	/**
-	 * Register this widget's script only when it has one on disk.
+	 * Register this widget's script (and any shared libraries it opts into)
+	 * only when present. Elementor enqueues these on demand, so a widget's own
+	 * JS — and, e.g., the shared carousel engine — load only where used.
 	 *
 	 * @return array
 	 */
 	public function get_script_depends() {
 		$slug = $this->fwfe_slug();
+		$deps = $this->get_lib_script_depends();
 		if ( is_readable( FWFE_DIR . 'assets/js/widgets/' . $slug . '.js' ) ) {
-			return array( Assets::handle( $slug, 'js' ) );
+			$deps[] = Assets::handle( $slug, 'js' );
 		}
+		return $deps;
+	}
+
+	/**
+	 * Shared library script handles this widget needs (registered in Assets).
+	 * Override in a widget, e.g. `return array( Assets::lib_handle( 'carousel' ) );`.
+	 *
+	 * @return array
+	 */
+	protected function get_lib_script_depends() {
 		return array();
 	}
 

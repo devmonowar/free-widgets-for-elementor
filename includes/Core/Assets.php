@@ -38,6 +38,28 @@ final class Assets {
 	}
 
 	/**
+	 * Handle for a shared library script (e.g. the carousel engine).
+	 *
+	 * @param string $name Library name.
+	 * @return string
+	 */
+	public static function lib_handle( $name ) {
+		return 'fwfe-lib-' . $name;
+	}
+
+	/**
+	 * Shared libraries: name => path. Registered (not enqueued); a widget opts
+	 * in via Widget_Base::get_lib_script_depends() so the lib loads only where used.
+	 *
+	 * @return array<string,string>
+	 */
+	public static function libs() {
+		return array(
+			'carousel' => 'assets/js/lib/carousel.js',
+		);
+	}
+
+	/**
 	 * Version string for cache-busting.
 	 *
 	 * @return string
@@ -65,6 +87,13 @@ final class Assets {
 				array(),
 				$version
 			);
+		}
+
+		// Shared libraries (opt-in per widget via get_lib_script_depends()).
+		foreach ( self::libs() as $name => $rel ) {
+			if ( is_readable( FWFE_DIR . $rel ) ) {
+				wp_register_script( self::lib_handle( $name ), FWFE_URL . $rel, array(), $version, true );
+			}
 		}
 
 		foreach ( array_keys( Helper::widget_registry() ) as $slug ) {

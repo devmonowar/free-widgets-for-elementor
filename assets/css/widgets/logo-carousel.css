@@ -1,0 +1,134 @@
+/**
+ * Free Widgets For Elementor — Logo Carousel.
+ *
+ * Structural defaults only. Colours, sizes, opacity, grayscale, padding and
+ * spacing are driven by the Style-tab controls (Elementor `selectors`), which
+ * override these. Includes the shared `.fwfe-carousel` engine structure (the
+ * JS engine sets slide widths and the track transform inline). BEM only.
+ */
+
+/* ---- Shared carousel structure ---- */
+.fwfe-carousel {
+	position: relative;
+}
+
+.fwfe-carousel__viewport {
+	overflow: hidden;
+	width: 100%;
+}
+
+.fwfe-carousel__track {
+	display: flex;
+	align-items: center;
+	will-change: transform;
+}
+
+.fwfe-carousel__slide {
+	flex: 0 0 auto;
+	box-sizing: border-box;
+}
+
+/* ---- Arrows ---- */
+.fwfe-carousel__arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: #fff;
+	color: #111827;
+	cursor: pointer;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.fwfe-carousel__arrow--prev {
+	left: -8px;
+}
+
+.fwfe-carousel__arrow--next {
+	right: -8px;
+}
+
+.fwfe-carousel__arrow:hover,
+.fwfe-carousel__arrow:focus {
+	background: #f3f4f6;
+}
+
+.fwfe-carousel__arrow:disabled {
+	opacity: 0.4;
+	cursor: default;
+	pointer-events: none;
+}
+
+.fwfe-carousel__arrow svg {
+	width: 20px;
+	height: 20px;
+}
+
+/* ---- Dots ---- */
+.fwfe-carousel__dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	margin-top: 16px;
+}
+
+.fwfe-carousel__dot {
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: #d1d5db;
+	cursor: pointer;
+	transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.fwfe-carousel__dot.is-active {
+	background: #6366f1;
+	transform: scale(1.2);
+}
+
+/* ---- Logo item ---- */
+.fwfe-logo-carousel__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 16px;
+}
+
+.fwfe-logo-carousel__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+}
+
+.fwfe-logo-carousel__img {
+	display: block;
+	max-width: 100%;
+	max-height: 60px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+/* ---- Reduced motion ---- */
+@media ( prefers-reduced-motion: reduce ) {
+	.fwfe-carousel__track,
+	.fwfe-carousel__arrow,
+	.fwfe-carousel__dot,
+	.fwfe-logo-carousel__img {
+		transition: none;
+	}
+}

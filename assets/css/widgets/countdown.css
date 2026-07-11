@@ -1,0 +1,65 @@
+/**
+ * Free Widgets For Elementor — Countdown Timer.
+ *
+ * Structural defaults only. Colours, typography, background, padding, radius,
+ * gap and min-width are driven by the Style-tab controls (Elementor
+ * `selectors`), which override these.
+ */
+
+.fwfe-countdown__units {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+}
+
+.fwfe-countdown__unit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 72px;
+	padding: 16px 12px;
+	border-radius: 8px;
+	background: #111827;
+}
+
+.fwfe-countdown__number {
+	color: #fff;
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1;
+	font-variant-numeric: tabular-nums;
+}
+
+.fwfe-countdown__label {
+	margin-top: 6px;
+	color: #d1d5db;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.fwfe-countdown__expired {
+	color: #dc2626;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+/* Hidden helper for the state not currently shown. */
+.fwfe-countdown [hidden] {
+	display: none;
+}
+
+/* ---- Responsive ---- */
+@media ( max-width: 480px ) {
+	.fwfe-countdown__number {
+		font-size: 26px;
+	}
+
+	.fwfe-countdown__unit {
+		min-width: 60px;
+		padding: 12px 8px;
+	}
+}

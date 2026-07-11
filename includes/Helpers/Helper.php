@@ -28,16 +28,22 @@ final class Helper {
 	 */
 	public static function widget_registry() {
 		return array(
-			'heading'     => __( 'Heading', 'free-widgets-for-elementor' ),
-			'button'      => __( 'Button', 'free-widgets-for-elementor' ),
-			'image'       => __( 'Image', 'free-widgets-for-elementor' ),
-			'icon-box'    => __( 'Icon Box', 'free-widgets-for-elementor' ),
-			'counter'     => __( 'Counter', 'free-widgets-for-elementor' ),
-			'team'        => __( 'Team', 'free-widgets-for-elementor' ),
-			'testimonial' => __( 'Testimonial', 'free-widgets-for-elementor' ),
-			'accordion'   => __( 'Accordion', 'free-widgets-for-elementor' ),
-			'tabs'        => __( 'Tabs', 'free-widgets-for-elementor' ),
-			'cta'         => __( 'Call To Action', 'free-widgets-for-elementor' ),
+			'heading'       => __( 'Heading', 'free-widgets-for-elementor' ),
+			'button'        => __( 'Button', 'free-widgets-for-elementor' ),
+			'image'         => __( 'Image', 'free-widgets-for-elementor' ),
+			'icon-box'      => __( 'Icon Box', 'free-widgets-for-elementor' ),
+			'counter'       => __( 'Counter', 'free-widgets-for-elementor' ),
+			'team'          => __( 'Team', 'free-widgets-for-elementor' ),
+			'testimonial'   => __( 'Testimonial', 'free-widgets-for-elementor' ),
+			'accordion'     => __( 'Accordion', 'free-widgets-for-elementor' ),
+			'tabs'          => __( 'Tabs', 'free-widgets-for-elementor' ),
+			'cta'           => __( 'Call To Action', 'free-widgets-for-elementor' ),
+			'pricing-table' => __( 'Pricing Table', 'free-widgets-for-elementor' ),
+			'flip-box'      => __( 'Flip Box', 'free-widgets-for-elementor' ),
+			'progress-bar'  => __( 'Progress Bar', 'free-widgets-for-elementor' ),
+			'countdown'     => __( 'Countdown Timer', 'free-widgets-for-elementor' ),
+			'post-grid'     => __( 'Post Grid', 'free-widgets-for-elementor' ),
+			'logo-carousel' => __( 'Logo Carousel', 'free-widgets-for-elementor' ),
 		);
 	}
 
