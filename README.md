@@ -4,8 +4,6 @@ A lightweight, **100% free** collection of essential [Elementor](https://wordpre
 
 [![CI](https://github.com/devmonowar/free-widgets-for-elementor/actions/workflows/ci.yml/badge.svg)](https://github.com/devmonowar/free-widgets-for-elementor/actions/workflows/ci.yml)
 
-> **Note:** This is a complete, from-scratch build. The plugin shares only the WordPress.org slug (`free-widgets-for-elementor`) with the previous version — no code, data or UI is carried over.
-
 ## Features
 
 - **10 essential widgets** for the Elementor editor, grouped under their own **Free Widgets** category.
