@@ -9,6 +9,7 @@
 /phpcs.xml.dist
 /plan.txt
 /README.md
+# Widget authoring scaffold — kept in git, never shipped.
 /includes/Widgets/_Template
 /assets/css/widgets/_template.css
 /assets/js/widgets/_template.js

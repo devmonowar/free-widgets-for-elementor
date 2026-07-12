@@ -21,16 +21,7 @@ defined( 'ABSPATH' ) || exit;
 class Widget extends Widget_Base {
 
 	/**
-	 * Allowed title tags.
-	 *
-	 * @return array
-	 */
-	private function allowed_tags() {
-		return array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div', 'span', 'p' );
-	}
-
-	/**
-	 * Widget machine name.
+	 * Machine name.
 	 *
 	 * @return string
 	 */
@@ -151,6 +142,27 @@ class Widget extends Widget_Base {
 			)
 		);
 
+		$this->end_controls_section();
+
+		$this->register_style_controls();
+	}
+
+	/**
+	 * Register style controls.
+	 *
+	 * @return void
+	 */
+	protected function register_style_controls() {
+
+		/* ------------------------------------------------------- Style: Box */
+		$this->start_controls_section(
+			'section_style_box',
+			array(
+				'label' => esc_html__( 'Box', 'free-widgets-for-elementor' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+			)
+		);
+
 		$this->add_responsive_control(
 			'align',
 			array(
@@ -174,27 +186,6 @@ class Widget extends Widget_Base {
 				'selectors' => array(
 					'{{WRAPPER}} .fwfe-cta' => 'text-align: {{VALUE}};',
 				),
-			)
-		);
-
-		$this->end_controls_section();
-
-		$this->register_style_controls();
-	}
-
-	/**
-	 * Register style controls.
-	 *
-	 * @return void
-	 */
-	protected function register_style_controls() {
-
-		/* ------------------------------------------------------- Style: Box */
-		$this->start_controls_section(
-			'section_style_box',
-			array(
-				'label' => esc_html__( 'Box', 'free-widgets-for-elementor' ),
-				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 
@@ -392,7 +383,7 @@ class Widget extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
-		$tag      = in_array( $settings['title_tag'], $this->allowed_tags(), true ) ? $settings['title_tag'] : 'h2';
+		$tag      = in_array( $settings['title_tag'], $this->allowed_heading_tags(), true ) ? $settings['title_tag'] : 'h2';
 		$has_btn  = '' !== trim( (string) $settings['button_text'] );
 		$has_icon = ! empty( $settings['button_icon']['value'] );
 

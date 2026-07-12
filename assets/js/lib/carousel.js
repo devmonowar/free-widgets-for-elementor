@@ -183,15 +183,19 @@
 			return;
 		}
 		this.dotsWrap.innerHTML = '';
+		this.dotsWrap.setAttribute( 'role', 'group' );
+		this.dotsWrap.setAttribute( 'aria-label', this.root.getAttribute( 'data-nav-label' ) || 'Slide navigation' );
 		var pages = this.pageCount();
 		var self = this;
+		// Translatable label template supplied by the widget markup ("%d" = group number).
+		var dotTpl = this.root.getAttribute( 'data-dot-label' ) || 'Go to slide group %d';
 
 		for ( var p = 0; p < pages; p++ ) {
 			( function ( page ) {
 				var dot = document.createElement( 'button' );
 				dot.type = 'button';
 				dot.className = 'fwfe-carousel__dot';
-				dot.setAttribute( 'aria-label', 'Go to slide group ' + ( page + 1 ) );
+				dot.setAttribute( 'aria-label', dotTpl.replace( '%d', page + 1 ) );
 				dot.addEventListener( 'click', function () {
 					self.goToPage( page );
 					self.restartAutoplay();
@@ -314,13 +318,20 @@
 			self.stopAutoplay();
 		} );
 		this.root.addEventListener( 'mouseleave', function () {
-			self.startAutoplay();
+			// Don't resume while a keyboard user is still focused inside.
+			if ( ! self.root.contains( document.activeElement ) ) {
+				self.startAutoplay();
+			}
 		} );
 		this.root.addEventListener( 'focusin', function () {
 			self.stopAutoplay();
 		} );
-		this.root.addEventListener( 'focusout', function () {
-			self.startAutoplay();
+		this.root.addEventListener( 'focusout', function ( e ) {
+			// Only resume when focus actually leaves the carousel (not moving
+			// between its own children).
+			if ( ! e.relatedTarget || ! self.root.contains( e.relatedTarget ) ) {
+				self.startAutoplay();
+			}
 		} );
 
 		// Responsive relayout on resize is handled by the shared module-level
@@ -338,6 +349,11 @@
 	 */
 	function initCarousels( scope ) {
 		var root = scope || document;
+		// Drop instances whose root was detached (e.g. Elementor editor re-render),
+		// so the shared array doesn't accumulate stale entries between resizes.
+		instances = instances.filter( function ( c ) {
+			return c.root && c.root.isConnected;
+		} );
 		var nodes = root.querySelectorAll ? root.querySelectorAll( '.fwfe-carousel' ) : [];
 		Array.prototype.forEach.call( nodes, function ( el ) {
 			if ( el.getAttribute( 'data-fwfe-done' ) ) {

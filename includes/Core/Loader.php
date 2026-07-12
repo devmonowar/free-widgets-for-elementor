@@ -104,8 +104,9 @@ final class Loader {
 		self::require_files(
 			array(
 				'Admin/Dashboard.php',
-				'Admin/Settings.php',
 				'Admin/Widgets_Manager.php',
+				'Admin/Demo_Library.php',
+				'Admin/Settings.php',
 				'Admin/System_Info.php',
 			)
 		);
@@ -132,7 +133,7 @@ final class Loader {
 	/**
 	 * Convert a hyphenated slug to a PascalCase namespace segment.
 	 *
-	 * Example: icon-box -> IconBox
+	 * Example: flip-box -> FlipBox
 	 *
 	 * @param string $slug Widget slug.
 	 * @return string

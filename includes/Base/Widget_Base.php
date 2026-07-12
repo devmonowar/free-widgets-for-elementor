@@ -30,7 +30,7 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 	}
 
 	/**
-	 * Asset slug derived from the widget name (fwfe-heading -> heading).
+	 * Asset slug derived from the widget name (fwfe-flip-box -> flip-box).
 	 *
 	 * @return string
 	 */
@@ -93,5 +93,14 @@ abstract class Widget_Base extends \Elementor\Widget_Base {
 	 */
 	protected function fwfe_setting( $group, $key, $fallback = '' ) {
 		return Helper::get_option( $group, $key, $fallback );
+	}
+
+	/**
+	 * Whitelist of safe heading/text tags, shared by widgets with a tag control.
+	 *
+	 * @return array
+	 */
+	protected function allowed_heading_tags() {
+		return array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div', 'span', 'p' );
 	}
 }

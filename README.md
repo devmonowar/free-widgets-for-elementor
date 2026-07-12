@@ -1,15 +1,15 @@
 # Free Widgets For Elementor
 
-A lightweight, **100% free** collection of essential [Elementor](https://wordpress.org/plugins/elementor/) widgets — performance-first, accessible, and built with clean code. No upsells, ever.
+A lightweight, **100% free** set of essential [Elementor](https://wordpress.org/plugins/elementor/) widgets that the free core doesn't include — performance-first, clean code, no upsells.
 
 [![CI](https://github.com/devmonowar/free-widgets-for-elementor/actions/workflows/ci.yml/badge.svg)](https://github.com/devmonowar/free-widgets-for-elementor/actions/workflows/ci.yml)
 
 ## Features
 
-- **10 essential widgets** for the Elementor editor, grouped under their own **Free Widgets** category.
+- **Essential widgets** that fill the gaps Elementor's free core leaves out, grouped under their own **Free Widgets** category.
 - **Performance-first:** each widget's CSS/JS loads only on pages where the widget is actually used (via Elementor's `get_style_depends()` / `get_script_depends()`). Nothing unused is ever queued.
 - **No bloat:** plain CSS and vanilla JavaScript — no jQuery dependency for the widgets, no heavy libraries, **no build step**.
-- **Accessible (A11Y):** interactive widgets (Tabs, Accordion) ship correct ARIA roles/states and full keyboard support (arrow keys, Home/End, Enter/Space).
+- **Clean, accessible markup:** semantic HTML, escaped output, focus states, and `prefers-reduced-motion` support on animated widgets (Flip Box, Countdown, Logo Carousel).
 - **Container ready:** works inside Elementor's Flexbox and CSS Grid containers.
 - **Admin dashboard** to enable/disable individual widgets, set global design defaults (border radius, shadow, typography), and view system info — all in a single, lightweight option.
 - **Translation ready & RTL friendly.** 100% free, GPL licensed — no account or license key.
@@ -18,16 +18,13 @@ A lightweight, **100% free** collection of essential [Elementor](https://wordpre
 
 | Widget | Notes |
 | --- | --- |
-| Heading | Tag, link, alignment, typography |
-| Button | Icon, sizes, hover styles |
-| Image | Responsive, caption, link |
-| Icon Box | Top / left / right layouts |
-| Counter | Count-up on scroll (IntersectionObserver) |
+| Pricing Table | Header, price, feature list, button, optional "featured" highlight |
+| Flip Box | 3D hover/click flip to a back face with a call to action |
 | Team | Photo, role, bio, social links |
-| Testimonial | Quote, avatar, name, title |
-| Accordion | Accessible, keyboard navigation |
-| Tabs | WAI-ARIA tabs, horizontal/vertical |
 | Call To Action | Title, text, button, background |
+| Countdown Timer | Counts down to a date/time, optional expired message |
+| Post Grid | Responsive grid of posts (image, title, meta, excerpt, read-more) |
+| Logo Carousel | Responsive logo/brand carousel with arrows, dots and autoplay |
 
 ## Requirements
 

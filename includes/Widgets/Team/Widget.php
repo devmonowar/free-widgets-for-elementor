@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 class Widget extends Widget_Base {
 
 	/**
-	 * Widget machine name.
+	 * Machine name.
 	 *
 	 * @return string
 	 */
@@ -164,6 +164,27 @@ class Widget extends Widget_Base {
 			)
 		);
 
+		$this->end_controls_section();
+
+		$this->register_style_controls();
+	}
+
+	/**
+	 * Register style controls.
+	 *
+	 * @return void
+	 */
+	protected function register_style_controls() {
+
+		/* ------------------------------------------------------ Style: Card */
+		$this->start_controls_section(
+			'section_style_card',
+			array(
+				'label' => esc_html__( 'Style', 'free-widgets-for-elementor' ),
+				'tab'   => Controls_Manager::TAB_STYLE,
+			)
+		);
+
 		$this->add_responsive_control(
 			'align',
 			array(
@@ -187,27 +208,6 @@ class Widget extends Widget_Base {
 				'selectors' => array(
 					'{{WRAPPER}} .fwfe-team' => 'text-align: {{VALUE}};',
 				),
-			)
-		);
-
-		$this->end_controls_section();
-
-		$this->register_style_controls();
-	}
-
-	/**
-	 * Register style controls.
-	 *
-	 * @return void
-	 */
-	protected function register_style_controls() {
-
-		/* ------------------------------------------------------ Style: Card */
-		$this->start_controls_section(
-			'section_style',
-			array(
-				'label' => esc_html__( 'Style', 'free-widgets-for-elementor' ),
-				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 
@@ -341,7 +341,7 @@ class Widget extends Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
-		$tag = in_array( $settings['name_tag'], $this->allowed_tags(), true ) ? $settings['name_tag'] : 'h3';
+		$tag = in_array( $settings['name_tag'], $this->allowed_heading_tags(), true ) ? $settings['name_tag'] : 'h3';
 
 		echo '<div class="fwfe-team">';
 
@@ -386,14 +386,5 @@ class Widget extends Widget_Base {
 		}
 
 		echo '</div></div>';
-	}
-
-	/**
-	 * Allowed name tags.
-	 *
-	 * @return array
-	 */
-	private function allowed_tags() {
-		return array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div', 'span', 'p' );
 	}
 }

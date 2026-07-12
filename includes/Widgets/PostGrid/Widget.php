@@ -625,11 +625,7 @@ class Widget extends Widget_Base {
 		}
 		$read_more_text = isset( $settings['read_more_text'] ) ? $settings['read_more_text'] : esc_html__( 'Read More', 'free-widgets-for-elementor' );
 
-		$title_tag    = ! empty( $settings['title_tag'] ) ? $settings['title_tag'] : 'h3';
-		$allowed_tags = array( 'h2', 'h3', 'h4', 'h5', 'h6', 'div' );
-		if ( ! in_array( $title_tag, $allowed_tags, true ) ) {
-			$title_tag = 'h3';
-		}
+		$title_tag = ( ! empty( $settings['title_tag'] ) && in_array( $settings['title_tag'], $this->allowed_tags(), true ) ) ? $settings['title_tag'] : 'h3';
 		?>
 		<div class="fwfe-post-grid">
 			<?php
@@ -662,9 +658,9 @@ class Widget extends Widget_Base {
 						<?php endif; ?>
 
 						<?php if ( $show_title ) : ?>
-							<<?php echo esc_html( $title_tag ); ?> class="fwfe-post-grid__title">
+							<<?php echo tag_escape( $title_tag ); ?> class="fwfe-post-grid__title">
 								<a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( get_the_title() ); ?></a>
-							</<?php echo esc_html( $title_tag ); ?>>
+							</<?php echo tag_escape( $title_tag ); ?>>
 						<?php endif; ?>
 
 						<?php if ( $show_excerpt ) : ?>
@@ -794,5 +790,14 @@ class Widget extends Widget_Base {
 		$options['full'] = esc_html__( 'Full', 'free-widgets-for-elementor' );
 
 		return $options;
+	}
+
+	/**
+	 * Allowed title tags for this widget.
+	 *
+	 * @return array
+	 */
+	private function allowed_tags() {
+		return array( 'h2', 'h3', 'h4', 'h5', 'h6', 'div' );
 	}
 }

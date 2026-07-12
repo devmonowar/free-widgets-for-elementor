@@ -11,6 +11,7 @@ use FWFE\Core\Assets;
 use FWFE\Admin\Dashboard;
 use FWFE\Admin\Settings;
 use FWFE\Admin\Widgets_Manager;
+use FWFE\Admin\Demo_Library;
 use FWFE\Admin\System_Info;
 
 defined( 'ABSPATH' ) || exit;
@@ -40,6 +41,7 @@ final class Admin {
 		// Form/action handlers (admin-post.php).
 		add_action( 'admin_post_fwfe_save_settings', array( '\FWFE\Admin\Settings', 'handle_save' ) );
 		add_action( 'admin_post_fwfe_clear_cache', array( '\FWFE\Admin\Settings', 'handle_clear_cache' ) );
+		add_action( 'admin_post_' . Demo_Library::IMPORT_ACTION, array( '\FWFE\Admin\Demo_Library', 'handle_import' ) );
 	}
 
 	/**
@@ -90,6 +92,15 @@ final class Admin {
 			'manage_options',
 			Widgets_Manager::SLUG,
 			array( $this, 'render_widgets' )
+		);
+
+		add_submenu_page(
+			self::MENU_SLUG,
+			esc_html__( 'Demo Library', 'free-widgets-for-elementor' ),
+			esc_html__( 'Demo Library', 'free-widgets-for-elementor' ),
+			'manage_options',
+			Demo_Library::SLUG,
+			array( $this, 'render_demo_library' )
 		);
 
 		add_submenu_page(
@@ -147,6 +158,15 @@ final class Admin {
 	 */
 	public function render_widgets() {
 		( new Widgets_Manager() )->render();
+	}
+
+	/**
+	 * Render the Demo Library page.
+	 *
+	 * @return void
+	 */
+	public function render_demo_library() {
+		( new Demo_Library() )->render();
 	}
 
 	/**

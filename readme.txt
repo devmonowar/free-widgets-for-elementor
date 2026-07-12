@@ -4,44 +4,36 @@ Tags: elementor, elementor addons, elementor widgets, page builder, widgets
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 Requires Plugins: elementor
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A lightweight, 100% free collection of essential Elementor widgets. Performance-first, accessible, and built with clean code. No upsells, ever.
+A lightweight, 100% free set of essential Elementor widgets that the free core doesn't include. Performance-first, clean code, no upsells.
 
 == Description ==
 
-**Free Widgets For Elementor** adds 16 essential, hand-crafted widgets to the Elementor editor — with a strong focus on performance, accessibility and clean code. It is **100% free forever**: no Pro version, no upsells, no locked features, and no "Upgrade" buttons cluttering your editor.
+**Free Widgets For Elementor** adds a focused set of essential widgets that Elementor's free core doesn't ship with — Pricing Table, Flip Box, Team, Call To Action, Countdown Timer, Post Grid and Logo Carousel. Rather than re-creating widgets you already have, it fills the real gaps, cleanly and lightly. It is **100% free forever**: no Pro version, no upsells, no locked features, and no "Upgrade" buttons cluttering your editor.
 
 = Why you'll like it =
 
+* **Fills the gaps** — the widgets Elementor's free core leaves out, without the bloat of a giant all-in-one pack.
 * **Performance-first** — each widget's CSS/JS loads only on pages where the widget is actually used (conditional asset loading). Nothing unused is ever queued.
 * **No bloat** — plain CSS and vanilla JavaScript. No jQuery dependency for our widgets, no heavy libraries, no build artifacts.
-* **Accessible (A11Y)** — interactive widgets (Tabs, Accordion) ship proper ARIA attributes and full keyboard support.
+* **Clean, accessible markup** — semantic HTML, escaped output and `prefers-reduced-motion` support on animated widgets.
 * **Container ready** — works seamlessly inside Elementor's Flexbox and CSS Grid containers.
 * **Translation ready & RTL friendly.**
 * **Truly free** — GPL licensed, open source, no account or license key required.
 
 = Included widgets =
 
-1. **Heading** — flexible headings with tag, link, alignment and typography control.
-2. **Button** — call-to-action button with icon, sizes and hover styles.
-3. **Image** — responsive image with caption and link options.
-4. **Icon Box** — icon + title + description, with top/left/right layouts.
-5. **Counter** — animated number counter (count-up on scroll into view).
-6. **Team** — team member card with photo, role, bio and social links.
-7. **Testimonial** — quote with avatar, name and title.
-8. **Accordion** — accessible collapsible panels with keyboard navigation.
-9. **Tabs** — accessible tabbed content (horizontal or vertical).
-10. **Call To Action** — title, description and button in a styled box.
-11. **Pricing Table** — a pricing plan with header, price, feature list and a button, with an optional "featured" highlight.
-12. **Flip Box** — a card that flips in 3D (hover or click) to reveal a back face with a call to action.
-13. **Progress Bar** — an animated skill/progress bar that fills when scrolled into view.
-14. **Countdown Timer** — counts down to a date and time, with an optional expired message.
-15. **Post Grid** — display your posts in a responsive grid (image, title, meta, excerpt and read-more).
-16. **Logo Carousel** — a responsive logo/brand carousel with arrows, dots and autoplay, powered by a lightweight built-in engine.
+1. **Pricing Table** — a pricing plan with header, price, feature list and a button, with an optional "featured" highlight.
+2. **Flip Box** — a card that flips in 3D (hover or click) to reveal a back face with a call to action.
+3. **Team** — team member card with photo, role, bio and social links.
+4. **Call To Action** — title, description and button in a styled box.
+5. **Countdown Timer** — counts down to a date and time, with an optional expired message.
+6. **Post Grid** — display your posts in a responsive grid (image, title, meta, excerpt and read-more).
+7. **Logo Carousel** — a responsive logo/brand carousel with arrows, dots and autoplay, powered by a lightweight built-in engine.
 
 = Admin tools =
 
@@ -70,21 +62,40 @@ No. A widget's stylesheet and script are loaded only on the specific pages where
 
 = Are the widgets accessible? =
 
-Yes. Interactive widgets such as Tabs and Accordion include correct ARIA roles/states and full keyboard support (arrow keys, Home/End, Enter/Space).
+Yes. Widgets output semantic, escaped markup, animated widgets respect the visitor's `prefers-reduced-motion` setting, and interactive elements are keyboard-friendly.
 
 = Does it work with Elementor's Flexbox and Grid containers? =
 
 Yes, all widgets are built to work inside Elementor containers.
 
+= Where do the demos come from? =
+
+The optional **Demo Library** screen loads ready-made sections from an online library, so new demos can be added without updating the plugin. It only connects when you open the Demo Library screen or import a demo. See "External services" below.
+
+== External services ==
+
+This plugin includes an optional **Demo Library** that loads ready-made Elementor sections from a remote service hosted on GitHub Pages: [devmonowar.github.io/wp-plugin-demo-library](https://devmonowar.github.io/wp-plugin-demo-library/)
+
+It connects to this service only when you:
+
+* open the **Demo Library** screen — to download the list of demos and show their preview images; and
+* click **Import** — to download that demo's template and images into your site (as an Elementor saved template, with images added to your Media Library).
+
+These are plain, read-only requests for files. No personal data is collected or sent, and no request is made unless you use the Demo Library. The service is provided by GitHub Pages (GitHub, Inc.) — [terms of service](https://docs.github.com/site-policy/github-terms/github-terms-of-service) — [privacy statement](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement).
+
 == Screenshots ==
 
 1. The Free Widgets category and widgets inside the Elementor editor.
-2. The Icon Box widget with top, left and right layouts.
-3. Accessible Accordion and Tabs widgets.
-4. The plugin dashboard with per-widget enable/disable.
-5. The settings screen (General, Performance, Developer, Global Design).
+2. The Pricing Table widget with a highlighted "featured" plan.
+3. The Flip Box and Team widgets.
+4. The Demo Library — import ready-made sections in one click.
+5. The plugin dashboard with per-widget enable/disable.
 
 == Changelog ==
+
+= 2.0.3 =
+* New: Demo Library — browse ready-made Elementor sections and import any of them as a saved template (with its images) in one click. New demos are added online, so they appear without updating the plugin.
+* A focused, essentials-first widget set — Pricing Table, Flip Box, Team, Call To Action, Countdown Timer, Post Grid and Logo Carousel — each covering a gap in Elementor's built-in widgets.
 
 = 2.0.2 =
 * New: six widgets — Pricing Table, Flip Box, Progress Bar, Countdown Timer, Post Grid and Logo Carousel.
@@ -99,6 +110,9 @@ Yes, all widgets are built to work inside Elementor containers.
 * Admin dashboard, per-widget manager, settings and system info.
 
 == Upgrade Notice ==
+
+= 2.0.3 =
+Adds a one-click Demo Library and focuses the plugin on the essential widgets Elementor's free core doesn't include.
 
 = 2.0.2 =
 Adds six new widgets: Pricing Table, Flip Box, Progress Bar, Countdown Timer, Post Grid and Logo Carousel.

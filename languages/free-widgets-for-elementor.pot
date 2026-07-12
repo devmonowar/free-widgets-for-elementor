@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Free Widgets For Elementor 2.0.1\n"
+"Project-Id-Version: Free Widgets For Elementor 2.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/free-widgets-for-elementor\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-27T18:40:45+02:00\n"
+"POT-Creation-Date: 2026-07-12T19:21:47+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: free-widgets-for-elementor\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #. Author URI of the plugin
 #: free-widgets-for-elementor.php
-msgid "https://profiles.wordpress.org/devmonowar/"
+msgid "https://profiles.wordpress.org/kstmonowar/"
 msgstr ""
 
 #: includes/Admin/Dashboard.php:35
@@ -54,8 +54,9 @@ msgid "Manage Widgets"
 msgstr ""
 
 #: includes/Admin/Dashboard.php:44
-#: includes/Hooks/Admin.php:78
-#: includes/Hooks/Admin.php:79
+#: includes/Hooks/Admin.php:57
+#: includes/Hooks/Admin.php:108
+#: includes/Hooks/Admin.php:109
 msgid "Settings"
 msgstr ""
 
@@ -68,8 +69,8 @@ msgid "Open Settings"
 msgstr ""
 
 #: includes/Admin/Dashboard.php:49
-#: includes/Hooks/Admin.php:87
-#: includes/Hooks/Admin.php:88
+#: includes/Hooks/Admin.php:117
+#: includes/Hooks/Admin.php:118
 msgid "System Info"
 msgstr ""
 
@@ -83,6 +84,86 @@ msgstr ""
 
 #: includes/Admin/Dashboard.php:55
 msgid "Available widgets"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:82
+msgid "The demo library could not be reached."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:102
+msgid "The demo library response was not valid."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:105
+msgid "The demo library is for a different plugin."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:135
+msgid "The demo library is empty right now."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:167
+#: includes/Hooks/Admin.php:99
+#: includes/Hooks/Admin.php:100
+msgid "Demo Library"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:168
+msgid "Refresh"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:170
+msgid "Ready-made sections built with Free Widgets. Import one, then drop it into any page from Templates &rarr; Saved Templates."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:176
+msgid "The demo library is unavailable right now."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:206
+#: includes/Widgets/PricingTable/Widget.php:102
+msgid "Featured"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:208
+msgid "New"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:226
+#: includes/Admin/Demo_Library.php:229
+msgid "Import"
+msgstr ""
+
+#. translators: %s: required plugin version.
+#: includes/Admin/Demo_Library.php:233
+#, php-format
+msgid "Requires Free Widgets For Elementor %s+"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:261
+msgid "Demo imported."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:262
+msgid "It has been added to your saved templates."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:264
+msgid "Edit in Elementor"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:266
+msgid "View saved templates"
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:273
+msgid "Sorry, that demo could not be imported. Please try again."
+msgstr ""
+
+#: includes/Admin/Demo_Library.php:286
+#: includes/Admin/Settings.php:236
+#: includes/Admin/Settings.php:285
+msgid "You are not allowed to do this."
 msgstr ""
 
 #: includes/Admin/Settings.php:32
@@ -105,69 +186,64 @@ msgstr ""
 msgid "Free Widgets — Settings"
 msgstr ""
 
-#: includes/Admin/Settings.php:104
+#: includes/Admin/Settings.php:116
 msgid "Enable SVG"
 msgstr ""
 
-#: includes/Admin/Settings.php:108
+#: includes/Admin/Settings.php:120
 msgid "Allow inline SVG icons in widgets."
 msgstr ""
 
-#: includes/Admin/Settings.php:113
+#: includes/Admin/Settings.php:125
 msgid "Load Font Awesome"
 msgstr ""
 
-#: includes/Admin/Settings.php:117
+#: includes/Admin/Settings.php:129
 msgid "Enqueue Font Awesome (off by default for performance)."
 msgstr ""
 
-#: includes/Admin/Settings.php:135
+#: includes/Admin/Settings.php:147
 msgid "Conditional Asset Loading"
 msgstr ""
 
-#: includes/Admin/Settings.php:139
+#: includes/Admin/Settings.php:151
 msgid "Load a widget's CSS/JS only on pages that use it (recommended)."
 msgstr ""
 
-#: includes/Admin/Settings.php:157
+#: includes/Admin/Settings.php:169
 msgid "Debug Mode"
 msgstr ""
 
-#: includes/Admin/Settings.php:161
+#: includes/Admin/Settings.php:173
 msgid "Enable extra debugging output for development."
 msgstr ""
 
-#: includes/Admin/Settings.php:166
+#: includes/Admin/Settings.php:178
 msgid "Clear Cache"
 msgstr ""
 
-#: includes/Admin/Settings.php:169
+#: includes/Admin/Settings.php:181
 msgid "Clear plugin cache"
 msgstr ""
 
-#: includes/Admin/Settings.php:187
+#: includes/Admin/Settings.php:199
 msgid "Default Border Radius"
 msgstr ""
 
-#: includes/Admin/Settings.php:191
+#: includes/Admin/Settings.php:203
 msgid "Default Box Shadow"
 msgstr ""
 
-#: includes/Admin/Settings.php:195
+#: includes/Admin/Settings.php:207
 msgid "Default Font Family"
 msgstr ""
 
-#: includes/Admin/Settings.php:211
+#: includes/Admin/Settings.php:223
 msgid "Settings saved."
 msgstr ""
 
-#: includes/Admin/Settings.php:213
+#: includes/Admin/Settings.php:225
 msgid "Cache cleared."
-msgstr ""
-
-#: includes/Admin/Settings.php:224
-#: includes/Admin/Settings.php:271
-msgid "You are not allowed to do this."
 msgstr ""
 
 #: includes/Admin/System_Info.php:35
@@ -207,12 +283,10 @@ msgid "WP debug mode"
 msgstr ""
 
 #: includes/Admin/System_Info.php:42
-#: includes/Widgets/Counter/Widget.php:126
 msgid "On"
 msgstr ""
 
 #: includes/Admin/System_Info.php:42
-#: includes/Widgets/Counter/Widget.php:127
 msgid "Off"
 msgstr ""
 
@@ -243,655 +317,1039 @@ msgid "%1$s requires Elementor (version %2$s or higher) to be installed and acti
 msgstr ""
 
 #: includes/Helpers/Helper.php:31
-#: includes/Widgets/Heading/Widget.php:46
-#: includes/Widgets/Heading/Widget.php:78
-#: includes/Widgets/Heading/Widget.php:160
-msgid "Heading"
+#: includes/Widgets/PricingTable/Widget.php:42
+msgid "Pricing Table"
 msgstr ""
 
 #: includes/Helpers/Helper.php:32
-#: includes/Widgets/Button/Widget.php:39
-#: includes/Widgets/Button/Widget.php:71
-#: includes/Widgets/Button/Widget.php:185
-#: includes/Widgets/Cta/Widget.php:292
-msgid "Button"
+#: includes/Widgets/FlipBox/Widget.php:42
+msgid "Flip Box"
 msgstr ""
 
 #: includes/Helpers/Helper.php:33
-#: includes/Widgets/Image/Widget.php:39
-#: includes/Widgets/Image/Widget.php:71
-#: includes/Widgets/Image/Widget.php:177
-#: includes/Widgets/Testimonial/Widget.php:88
-msgid "Image"
-msgstr ""
-
-#: includes/Helpers/Helper.php:34
-#: includes/Widgets/IconBox/Widget.php:46
-#: includes/Widgets/IconBox/Widget.php:78
-msgid "Icon Box"
-msgstr ""
-
-#: includes/Helpers/Helper.php:35
-#: includes/Widgets/Counter/Widget.php:36
-#: includes/Widgets/Counter/Widget.php:68
-msgid "Counter"
-msgstr ""
-
-#: includes/Helpers/Helper.php:36
-#: includes/Widgets/Team/Widget.php:48
+#: includes/Widgets/Team/Widget.php:39
 msgid "Team"
 msgstr ""
 
-#: includes/Helpers/Helper.php:37
-#: includes/Widgets/Testimonial/Widget.php:37
-#: includes/Widgets/Testimonial/Widget.php:69
-msgid "Testimonial"
-msgstr ""
-
-#: includes/Helpers/Helper.php:38
-#: includes/Widgets/Accordion/Widget.php:47
-#: includes/Widgets/Accordion/Widget.php:79
-msgid "Accordion"
-msgstr ""
-
-#: includes/Helpers/Helper.php:39
-#: includes/Widgets/Tabs/Widget.php:37
-#: includes/Widgets/Tabs/Widget.php:69
-#: includes/Widgets/Tabs/Widget.php:98
-#: includes/Widgets/Tabs/Widget.php:135
-#: includes/Widgets/Tabs/Widget.php:250
-msgid "Tabs"
-msgstr ""
-
-#: includes/Helpers/Helper.php:40
-#: includes/Widgets/Cta/Widget.php:47
-#: includes/Widgets/Cta/Widget.php:79
+#: includes/Helpers/Helper.php:34
+#: includes/Widgets/Cta/Widget.php:38
+#: includes/Widgets/Cta/Widget.php:70
 msgid "Call To Action"
 msgstr ""
 
-#: includes/Hooks/Admin.php:49
-#: includes/Hooks/Admin.php:50
+#: includes/Helpers/Helper.php:35
+#: includes/Widgets/Countdown/Widget.php:41
+msgid "Countdown Timer"
+msgstr ""
+
+#: includes/Helpers/Helper.php:36
+#: includes/Widgets/PostGrid/Widget.php:43
+msgid "Post Grid"
+msgstr ""
+
+#: includes/Helpers/Helper.php:37
+#: includes/Widgets/LogoCarousel/Widget.php:41
+msgid "Logo Carousel"
+msgstr ""
+
+#: includes/Hooks/Admin.php:70
+#: includes/Hooks/Admin.php:71
 #: includes/Hooks/Elementor.php:44
 msgid "Free Widgets"
 msgstr ""
 
-#: includes/Hooks/Admin.php:60
-#: includes/Hooks/Admin.php:61
+#: includes/Hooks/Admin.php:81
+#: includes/Hooks/Admin.php:82
 msgid "Dashboard"
 msgstr ""
 
-#: includes/Hooks/Admin.php:69
-#: includes/Hooks/Admin.php:70
+#: includes/Hooks/Admin.php:90
+#: includes/Hooks/Admin.php:91
 msgid "Widgets"
 msgstr ""
 
-#: includes/Hooks/Admin.php:96
-#: includes/Hooks/Admin.php:97
+#: includes/Hooks/Admin.php:126
+#: includes/Hooks/Admin.php:127
 msgid "Documentation"
 msgstr ""
 
-#: includes/Hooks/Admin.php:104
-#: includes/Hooks/Admin.php:105
+#: includes/Hooks/Admin.php:134
+#: includes/Hooks/Admin.php:135
 msgid "Support"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:89
-#: includes/Widgets/Counter/Widget.php:135
-#: includes/Widgets/Counter/Widget.php:205
-#: includes/Widgets/Cta/Widget.php:87
-#: includes/Widgets/Heading/Widget.php:86
-#: includes/Widgets/IconBox/Widget.php:98
-#: includes/Widgets/Tabs/Widget.php:79
-#: includes/Widgets/Testimonial/Widget.php:107
-msgid "Title"
+#: includes/Widgets/Countdown/Widget.php:73
+msgid "Countdown"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:91
-msgid "Accordion Title"
+#: includes/Widgets/Countdown/Widget.php:81
+msgid "Due Date"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:99
-#: includes/Widgets/Accordion/Widget.php:246
-#: includes/Widgets/Cta/Widget.php:238
-#: includes/Widgets/IconBox/Widget.php:255
-#: includes/Widgets/Tabs/Widget.php:89
-#: includes/Widgets/Tabs/Widget.php:188
-#: includes/Widgets/Testimonial/Widget.php:77
-msgid "Content"
+#: includes/Widgets/Countdown/Widget.php:82
+msgid "The countdown ends at this date and time (your site timezone)."
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:101
-msgid "Accordion content goes here. Edit this text."
+#: includes/Widgets/Countdown/Widget.php:95
+msgid "Units"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:108
-msgid "Items"
+#: includes/Widgets/Countdown/Widget.php:103
+msgid "Show Days"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:114
-msgid "Accordion Item #1"
+#: includes/Widgets/Countdown/Widget.php:105
+#: includes/Widgets/Countdown/Widget.php:127
+#: includes/Widgets/Countdown/Widget.php:149
+#: includes/Widgets/Countdown/Widget.php:171
+#: includes/Widgets/LogoCarousel/Widget.php:203
+#: includes/Widgets/LogoCarousel/Widget.php:228
+#: includes/Widgets/LogoCarousel/Widget.php:240
+#: includes/Widgets/LogoCarousel/Widget.php:252
+#: includes/Widgets/PostGrid/Widget.php:178
+#: includes/Widgets/PricingTable/Widget.php:105
+msgid "Yes"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:115
-msgid "Content for the first item."
+#: includes/Widgets/Countdown/Widget.php:106
+#: includes/Widgets/Countdown/Widget.php:128
+#: includes/Widgets/Countdown/Widget.php:150
+#: includes/Widgets/Countdown/Widget.php:172
+#: includes/Widgets/LogoCarousel/Widget.php:204
+#: includes/Widgets/LogoCarousel/Widget.php:229
+#: includes/Widgets/LogoCarousel/Widget.php:241
+#: includes/Widgets/LogoCarousel/Widget.php:253
+#: includes/Widgets/PostGrid/Widget.php:179
+#: includes/Widgets/PricingTable/Widget.php:106
+msgid "No"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:118
-msgid "Accordion Item #2"
+#: includes/Widgets/Countdown/Widget.php:115
+msgid "Days Label"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:119
-msgid "Content for the second item."
+#: includes/Widgets/Countdown/Widget.php:117
+msgid "Days"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:128
-#: includes/Widgets/Cta/Widget.php:97
-#: includes/Widgets/IconBox/Widget.php:118
-msgid "Title HTML Tag"
+#: includes/Widgets/Countdown/Widget.php:125
+msgid "Show Hours"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:145
-msgid "Open First Item"
+#: includes/Widgets/Countdown/Widget.php:137
+msgid "Hours Label"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:155
-#: includes/Widgets/Button/Widget.php:115
-#: includes/Widgets/IconBox/Widget.php:86
-#: includes/Widgets/IconBox/Widget.php:175
-#: includes/Widgets/Team/Widget.php:147
-msgid "Icon"
+#: includes/Widgets/Countdown/Widget.php:139
+msgid "Hours"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:167
-msgid "Active Icon"
+#: includes/Widgets/Countdown/Widget.php:147
+msgid "Show Minutes"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:182
-msgid "Header"
+#: includes/Widgets/Countdown/Widget.php:159
+msgid "Minutes Label"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:190
-#: includes/Widgets/Accordion/Widget.php:254
-#: includes/Widgets/Counter/Widget.php:182
-#: includes/Widgets/Counter/Widget.php:213
-#: includes/Widgets/IconBox/Widget.php:203
-#: includes/Widgets/IconBox/Widget.php:223
-#: includes/Widgets/Tabs/Widget.php:196
-msgid "Color"
+#: includes/Widgets/Countdown/Widget.php:161
+msgid "Minutes"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:201
-msgid "Active Color"
+#: includes/Widgets/Countdown/Widget.php:169
+msgid "Show Seconds"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:212
-msgid "Background"
+#: includes/Widgets/Countdown/Widget.php:181
+msgid "Seconds Label"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:231
-#: includes/Widgets/Accordion/Widget.php:273
-#: includes/Widgets/Button/Widget.php:294
-#: includes/Widgets/Cta/Widget.php:203
-#: includes/Widgets/Cta/Widget.php:364
-#: includes/Widgets/Tabs/Widget.php:215
-msgid "Padding"
+#: includes/Widgets/Countdown/Widget.php:183
+msgid "Seconds"
 msgstr ""
 
-#: includes/Widgets/Accordion/Widget.php:293
-msgid "Border Color"
+#: includes/Widgets/Countdown/Widget.php:194
+msgid "Expired"
 msgstr ""
 
-#: includes/Widgets/Button/Widget.php:79
-msgid "Text"
+#: includes/Widgets/Countdown/Widget.php:202
+#: includes/Widgets/Countdown/Widget.php:402
+msgid "Expired Message"
 msgstr ""
 
-#: includes/Widgets/Button/Widget.php:82
-msgid "Click Here"
+#: includes/Widgets/Countdown/Widget.php:203
+msgid "Shown when the countdown reaches zero. Leave blank to hide."
 msgstr ""
 
-#: includes/Widgets/Button/Widget.php:89
-#: includes/Widgets/Heading/Widget.php:97
-#: includes/Widgets/IconBox/Widget.php:138
-#: includes/Widgets/Image/Widget.php:148
-#: includes/Widgets/Team/Widget.php:159
-msgid "Link"
+#: includes/Widgets/Countdown/Widget.php:206
+msgid "This offer has expired."
 msgstr ""
 
-#: includes/Widgets/Button/Widget.php:92
-#: includes/Widgets/Cta/Widget.php:140
-#: includes/Widgets/Heading/Widget.php:100
-#: includes/Widgets/IconBox/Widget.php:141
-#: includes/Widgets/Image/Widget.php:165
-#: includes/Widgets/Team/Widget.php:161
-msgid "https://your-link.com"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:100
-#: includes/Widgets/IconBox/Widget.php:183
-msgid "Size"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:104
-msgid "Small"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:105
-msgid "Medium"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:106
-msgid "Large"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:107
-msgid "Extra Large"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:125
-#: includes/Widgets/IconBox/Widget.php:148
-msgid "Icon Position"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:129
-msgid "Before"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:130
-msgid "After"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:142
-msgid "Icon Spacing"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:156
-#: includes/Widgets/Counter/Widget.php:145
-#: includes/Widgets/Cta/Widget.php:157
-#: includes/Widgets/Heading/Widget.php:128
-#: includes/Widgets/Image/Widget.php:97
-#: includes/Widgets/Team/Widget.php:179
-#: includes/Widgets/Testimonial/Widget.php:117
-msgid "Alignment"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:160
-#: includes/Widgets/Counter/Widget.php:149
+#: includes/Widgets/Countdown/Widget.php:226
 #: includes/Widgets/Cta/Widget.php:161
-#: includes/Widgets/Heading/Widget.php:132
-#: includes/Widgets/IconBox/Widget.php:153
-#: includes/Widgets/Image/Widget.php:101
-#: includes/Widgets/Team/Widget.php:183
-#: includes/Widgets/Testimonial/Widget.php:121
-msgid "Left"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:164
-#: includes/Widgets/Counter/Widget.php:153
-#: includes/Widgets/Cta/Widget.php:165
-#: includes/Widgets/Heading/Widget.php:136
-#: includes/Widgets/Image/Widget.php:105
-#: includes/Widgets/Team/Widget.php:187
-#: includes/Widgets/Testimonial/Widget.php:125
-msgid "Center"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:168
-#: includes/Widgets/Counter/Widget.php:157
-#: includes/Widgets/Cta/Widget.php:169
-#: includes/Widgets/Heading/Widget.php:140
-#: includes/Widgets/IconBox/Widget.php:161
-#: includes/Widgets/Image/Widget.php:109
-#: includes/Widgets/Team/Widget.php:191
-#: includes/Widgets/Testimonial/Widget.php:129
-msgid "Right"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:202
-#: includes/Widgets/Cta/Widget.php:301
-#: includes/Widgets/Heading/Widget.php:169
-#: includes/Widgets/IconBox/Widget.php:197
-msgid "Normal"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:208
-#: includes/Widgets/Button/Widget.php:239
-#: includes/Widgets/Cta/Widget.php:307
-#: includes/Widgets/Cta/Widget.php:338
-#: includes/Widgets/Heading/Widget.php:175
-#: includes/Widgets/Heading/Widget.php:193
-msgid "Text Color"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:220
-#: includes/Widgets/Button/Widget.php:250
-#: includes/Widgets/Cta/Widget.php:319
-#: includes/Widgets/Cta/Widget.php:349
-msgid "Background Color"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:233
-#: includes/Widgets/Cta/Widget.php:332
-#: includes/Widgets/Heading/Widget.php:187
-#: includes/Widgets/IconBox/Widget.php:217
-msgid "Hover"
-msgstr ""
-
-#: includes/Widgets/Button/Widget.php:274
-#: includes/Widgets/Cta/Widget.php:223
-#: includes/Widgets/Image/Widget.php:222
-msgid "Border Radius"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:76
-msgid "Starting Number"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:85
-msgid "Ending Number"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:94
-msgid "Number Prefix"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:103
-msgid "Number Suffix"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:112
-msgid "Animation Duration (ms)"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:123
-msgid "Thousand Separator"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:138
-msgid "Happy Customers"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:174
-msgid "Number"
-msgstr ""
-
-#: includes/Widgets/Counter/Widget.php:232
-#: includes/Widgets/IconBox/Widget.php:239
-msgid "Spacing"
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:90
-msgid "Ready to get started?"
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:117
-#: includes/Widgets/IconBox/Widget.php:108
-msgid "Description"
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:120
-msgid "Join thousands of happy users today. It only takes a minute."
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:127
-msgid "Button Text"
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:130
-msgid "Get Started"
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:137
-msgid "Button Link"
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:148
-msgid "Button Icon"
-msgstr ""
-
-#: includes/Widgets/Cta/Widget.php:186
+#: includes/Widgets/FlipBox/Widget.php:218
+#: includes/Widgets/PricingTable/Widget.php:281
 msgid "Box"
 msgstr ""
 
-#: includes/Widgets/Cta/Widget.php:246
-#: includes/Widgets/IconBox/Widget.php:263
-#: includes/Widgets/Tabs/Widget.php:143
-#: includes/Widgets/Testimonial/Widget.php:199
+#: includes/Widgets/Countdown/Widget.php:234
+#: includes/Widgets/Cta/Widget.php:169
+#: includes/Widgets/FlipBox/Widget.php:248
+#: includes/Widgets/PricingTable/Widget.php:289
+#: includes/Widgets/Team/Widget.php:191
+#: includes/Widgets/_Template/Widget.php:117
+msgid "Alignment"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:238
+#: includes/Widgets/Cta/Widget.php:173
+#: includes/Widgets/FlipBox/Widget.php:180
+#: includes/Widgets/FlipBox/Widget.php:252
+#: includes/Widgets/PricingTable/Widget.php:293
+#: includes/Widgets/Team/Widget.php:195
+#: includes/Widgets/_Template/Widget.php:121
+msgid "Left"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:242
+#: includes/Widgets/Cta/Widget.php:177
+#: includes/Widgets/FlipBox/Widget.php:256
+#: includes/Widgets/PricingTable/Widget.php:297
+#: includes/Widgets/Team/Widget.php:199
+#: includes/Widgets/_Template/Widget.php:125
+msgid "Center"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:246
+#: includes/Widgets/Cta/Widget.php:181
+#: includes/Widgets/FlipBox/Widget.php:181
+#: includes/Widgets/FlipBox/Widget.php:260
+#: includes/Widgets/PricingTable/Widget.php:301
+#: includes/Widgets/Team/Widget.php:203
+#: includes/Widgets/_Template/Widget.php:129
+msgid "Right"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:261
+#: includes/Widgets/FlipBox/Widget.php:318
+#: includes/Widgets/FlipBox/Widget.php:440
+#: includes/Widgets/FlipBox/Widget.php:548
+#: includes/Widgets/FlipBox/Widget.php:579
+#: includes/Widgets/LogoCarousel/Widget.php:434
+#: includes/Widgets/PostGrid/Widget.php:329
+#: includes/Widgets/PricingTable/Widget.php:315
+#: includes/Widgets/PricingTable/Widget.php:392
+#: includes/Widgets/PricingTable/Widget.php:635
+#: includes/Widgets/PricingTable/Widget.php:665
+msgid "Background"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:273
+#: includes/Widgets/Cta/Widget.php:204
+#: includes/Widgets/Cta/Widget.php:365
+#: includes/Widgets/FlipBox/Widget.php:295
+#: includes/Widgets/FlipBox/Widget.php:594
+#: includes/Widgets/LogoCarousel/Widget.php:305
+#: includes/Widgets/PricingTable/Widget.php:356
+#: includes/Widgets/PricingTable/Widget.php:680
+msgid "Padding"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:285
+#: includes/Widgets/Cta/Widget.php:224
+#: includes/Widgets/FlipBox/Widget.php:274
+#: includes/Widgets/FlipBox/Widget.php:607
+#: includes/Widgets/PostGrid/Widget.php:349
+#: includes/Widgets/PostGrid/Widget.php:419
+#: includes/Widgets/PricingTable/Widget.php:335
+#: includes/Widgets/PricingTable/Widget.php:693
+msgid "Border Radius"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:298
+msgid "Gap Between Units"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:311
+msgid "Unit Min Width"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:327
+msgid "Number"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:335
+#: includes/Widgets/Countdown/Widget.php:366
+#: includes/Widgets/Countdown/Widget.php:410
+#: includes/Widgets/LogoCarousel/Widget.php:501
+#: includes/Widgets/PostGrid/Widget.php:443
+#: includes/Widgets/PostGrid/Widget.php:486
+#: includes/Widgets/PostGrid/Widget.php:517
+#: includes/Widgets/PostGrid/Widget.php:563
+#: includes/Widgets/PostGrid/Widget.php:582
+#: includes/Widgets/_Template/Widget.php:169
+msgid "Color"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:358
+msgid "Label"
+msgstr ""
+
+#: includes/Widgets/Countdown/Widget.php:386
+msgid "Spacing"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:78
+#: includes/Widgets/FlipBox/Widget.php:94
+#: includes/Widgets/FlipBox/Widget.php:125
+#: includes/Widgets/FlipBox/Widget.php:371
+#: includes/Widgets/FlipBox/Widget.php:452
+#: includes/Widgets/PostGrid/Widget.php:121
+#: includes/Widgets/PostGrid/Widget.php:434
+#: includes/Widgets/_Template/Widget.php:96
+#: includes/Widgets/_Template/Widget.php:161
+msgid "Title"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:81
+msgid "Ready to get started?"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:88
+#: includes/Widgets/PostGrid/Widget.php:209
+msgid "Title HTML Tag"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:108
+#: includes/Widgets/_Template/Widget.php:106
+msgid "Description"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:111
+msgid "Join thousands of happy users today. It only takes a minute."
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:118
+#: includes/Widgets/FlipBox/Widget.php:145
+#: includes/Widgets/PricingTable/Widget.php:248
+msgid "Button Text"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:121
+#: includes/Widgets/PricingTable/Widget.php:251
+msgid "Get Started"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:128
+#: includes/Widgets/FlipBox/Widget.php:155
+#: includes/Widgets/PricingTable/Widget.php:258
+msgid "Button Link"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:131
+#: includes/Widgets/LogoCarousel/Widget.php:117
+#: includes/Widgets/Team/Widget.php:152
+msgid "https://your-link.com"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:139
+msgid "Button Icon"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:239
+#: includes/Widgets/_Template/Widget.php:88
+msgid "Content"
+msgstr ""
+
+#: includes/Widgets/Cta/Widget.php:247
+#: includes/Widgets/FlipBox/Widget.php:380
+#: includes/Widgets/FlipBox/Widget.php:461
+#: includes/Widgets/PricingTable/Widget.php:435
 msgid "Title Color"
 msgstr ""
 
-#: includes/Widgets/Cta/Widget.php:259
-#: includes/Widgets/IconBox/Widget.php:275
+#: includes/Widgets/Cta/Widget.php:260
 msgid "Title Typography"
 msgstr ""
 
-#: includes/Widgets/Cta/Widget.php:267
-#: includes/Widgets/IconBox/Widget.php:296
+#: includes/Widgets/Cta/Widget.php:268
 msgid "Description Color"
 msgstr ""
 
-#: includes/Widgets/Cta/Widget.php:281
-#: includes/Widgets/IconBox/Widget.php:309
+#: includes/Widgets/Cta/Widget.php:282
 msgid "Description Typography"
 msgstr ""
 
-#: includes/Widgets/Heading/Widget.php:89
-msgid "Enter your title"
+#: includes/Widgets/Cta/Widget.php:293
+#: includes/Widgets/FlipBox/Widget.php:513
+#: includes/Widgets/PricingTable/Widget.php:240
+#: includes/Widgets/PricingTable/Widget.php:600
+msgid "Button"
 msgstr ""
 
-#: includes/Widgets/Heading/Widget.php:90
-msgid "Add Your Heading Text Here"
+#: includes/Widgets/Cta/Widget.php:302
+#: includes/Widgets/FlipBox/Widget.php:530
+#: includes/Widgets/LogoCarousel/Widget.php:318
+#: includes/Widgets/PostGrid/Widget.php:557
+#: includes/Widgets/PricingTable/Widget.php:617
+msgid "Normal"
 msgstr ""
 
-#: includes/Widgets/Heading/Widget.php:108
-msgid "HTML Tag"
+#: includes/Widgets/Cta/Widget.php:308
+#: includes/Widgets/Cta/Widget.php:339
+#: includes/Widgets/FlipBox/Widget.php:409
+#: includes/Widgets/FlipBox/Widget.php:490
+#: includes/Widgets/FlipBox/Widget.php:536
+#: includes/Widgets/FlipBox/Widget.php:567
+#: includes/Widgets/PricingTable/Widget.php:404
+#: includes/Widgets/PricingTable/Widget.php:539
+#: includes/Widgets/PricingTable/Widget.php:623
+#: includes/Widgets/PricingTable/Widget.php:654
+msgid "Text Color"
 msgstr ""
 
-#: includes/Widgets/Heading/Widget.php:144
-msgid "Justified"
+#: includes/Widgets/Cta/Widget.php:320
+#: includes/Widgets/Cta/Widget.php:350
+msgid "Background Color"
 msgstr ""
 
-#: includes/Widgets/Heading/Widget.php:204
-msgid "Transition Duration (s)"
+#: includes/Widgets/Cta/Widget.php:333
+#: includes/Widgets/FlipBox/Widget.php:195
+#: includes/Widgets/FlipBox/Widget.php:561
+#: includes/Widgets/LogoCarousel/Widget.php:363
+#: includes/Widgets/PostGrid/Widget.php:576
+#: includes/Widgets/PricingTable/Widget.php:648
+msgid "Hover"
 msgstr ""
 
-#: includes/Widgets/IconBox/Widget.php:101
-msgid "This is the heading"
+#: includes/Widgets/FlipBox/Widget.php:74
+#: includes/Widgets/FlipBox/Widget.php:310
+msgid "Front"
 msgstr ""
 
-#: includes/Widgets/IconBox/Widget.php:111
-msgid "Click edit button to change this text. Lorem ipsum dolor sit amet."
+#: includes/Widgets/FlipBox/Widget.php:82
+#: includes/Widgets/FlipBox/Widget.php:330
+#: includes/Widgets/Team/Widget.php:138
+msgid "Icon"
 msgstr ""
 
-#: includes/Widgets/IconBox/Widget.php:157
-msgid "Top"
+#: includes/Widgets/FlipBox/Widget.php:97
+msgid "Front Title"
 msgstr ""
 
-#: includes/Widgets/IconBox/Widget.php:283
-msgid "Title Spacing"
+#: includes/Widgets/FlipBox/Widget.php:104
+#: includes/Widgets/FlipBox/Widget.php:135
+#: includes/Widgets/FlipBox/Widget.php:400
+#: includes/Widgets/FlipBox/Widget.php:481
+msgid "Text"
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:79
-msgid "Choose Image"
+#: includes/Widgets/FlipBox/Widget.php:107
+msgid "A short teaser shown on the front of the card."
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:123
-msgid "Caption"
+#: includes/Widgets/FlipBox/Widget.php:117
+#: includes/Widgets/FlipBox/Widget.php:432
+msgid "Back"
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:127
-#: includes/Widgets/Image/Widget.php:152
-msgid "None"
+#: includes/Widgets/FlipBox/Widget.php:128
+msgid "Back Title"
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:128
-msgid "Attachment Caption"
+#: includes/Widgets/FlipBox/Widget.php:138
+msgid "More detail revealed after the card flips over."
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:129
-#: includes/Widgets/Image/Widget.php:137
-msgid "Custom Caption"
+#: includes/Widgets/FlipBox/Widget.php:148
+msgid "Learn More"
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:153
-msgid "Media File"
+#: includes/Widgets/FlipBox/Widget.php:168
+msgid "Flip"
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:154
-#: includes/Widgets/Image/Widget.php:162
-msgid "Custom URL"
+#: includes/Widgets/FlipBox/Widget.php:176
+msgid "Direction"
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:185
-msgid "Width"
+#: includes/Widgets/FlipBox/Widget.php:182
+msgid "Up"
 msgstr ""
 
-#: includes/Widgets/Image/Widget.php:201
+#: includes/Widgets/FlipBox/Widget.php:183
+msgid "Down"
+msgstr ""
+
+#: includes/Widgets/FlipBox/Widget.php:191
+msgid "Trigger"
+msgstr ""
+
+#: includes/Widgets/FlipBox/Widget.php:196
+msgid "Click"
+msgstr ""
+
+#: includes/Widgets/FlipBox/Widget.php:198
+msgid "Hover flips with pure CSS. Click adds an accessible flip button and keyboard support."
+msgstr ""
+
+#: includes/Widgets/FlipBox/Widget.php:226
+msgid "Min Height"
+msgstr ""
+
+#: includes/Widgets/FlipBox/Widget.php:339
+#: includes/Widgets/LogoCarousel/Widget.php:422
+msgid "Icon Color"
+msgstr ""
+
+#: includes/Widgets/FlipBox/Widget.php:352
+msgid "Icon Size"
+msgstr ""
+
+#: includes/Widgets/FlipBox/Widget.php:680
+msgid "Flip card"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:82
+msgid "Logos"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:92
+#: includes/Widgets/LogoCarousel/Widget.php:275
+msgid "Logo"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:104
+msgid "Name / Alt"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:107
+msgid "Used as the image alt text (and link title)."
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:114
+#: includes/Widgets/Team/Widget.php:150
+msgid "Link"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:124
+msgid "Logo Items"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:129
+msgid "Brand One"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:130
+msgid "Brand Two"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:131
+msgid "Brand Three"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:132
+msgid "Brand Four"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:133
+msgid "Brand Five"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:134
+msgid "Brand Six"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:145
+msgid "Carousel"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:153
+msgid "Slides Per View"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:165
+msgid "Slides Per View (Tablet)"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:177
+msgid "Slides Per View (Mobile)"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:189
+msgid "Gap (px)"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:201
+msgid "Autoplay"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:213
+msgid "Autoplay Speed (ms)"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:226
+msgid "Loop"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:238
+msgid "Show Arrows"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:250
+msgid "Show Dots"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:283
+msgid "Max Height"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:324
+#: includes/Widgets/LogoCarousel/Widget.php:369
 msgid "Opacity"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:81
-msgid "Tab Title"
+#: includes/Widgets/LogoCarousel/Widget.php:343
+#: includes/Widgets/LogoCarousel/Widget.php:388
+msgid "Grayscale"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:91
-msgid "Tab content goes here. Edit this text."
+#: includes/Widgets/LogoCarousel/Widget.php:413
+msgid "Arrows"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:104
-msgid "Tab #1"
+#: includes/Widgets/LogoCarousel/Widget.php:446
+msgid "Icon Color (Hover)"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:105
-msgid "Content for the first tab."
+#: includes/Widgets/LogoCarousel/Widget.php:458
+msgid "Background (Hover)"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:108
-msgid "Tab #2"
+#: includes/Widgets/LogoCarousel/Widget.php:470
+msgid "Size"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:109
-msgid "Content for the second tab."
+#: includes/Widgets/LogoCarousel/Widget.php:492
+msgid "Dots"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:118
+#: includes/Widgets/LogoCarousel/Widget.php:513
+msgid "Active Color"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:525
+msgid "Top Spacing"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:572
+msgid "carousel"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:573
+msgid "Logo carousel"
+msgstr ""
+
+#. translators: %d: slide group number.
+#: includes/Widgets/LogoCarousel/Widget.php:576
+#, php-format
+msgid "Go to slide group %d"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:577
+msgid "Slide navigation"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:602
+msgid "Previous"
+msgstr ""
+
+#: includes/Widgets/LogoCarousel/Widget.php:605
+msgid "Next"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:75
+msgid "Query"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:83
+msgid "Post Type"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:93
+msgid "Category"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:94
+msgid "Limit to a category. Only applies to the standard Post type."
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:105
+msgid "Posts Per Page"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:116
+msgid "Order By"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:120
+msgid "Date"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:122
+msgid "Menu Order"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:123
+msgid "Random"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:131
+msgid "Order"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:135
+msgid "Ascending"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:136
+msgid "Descending"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:148
 msgid "Layout"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:122
-msgid "Horizontal"
+#: includes/Widgets/PostGrid/Widget.php:156
+msgid "Columns"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:123
-msgid "Vertical"
+#: includes/Widgets/PostGrid/Widget.php:176
+msgid "Show Featured Image"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:154
-msgid "Active Title Color"
+#: includes/Widgets/PostGrid/Widget.php:188
+msgid "Image Size"
 msgstr ""
 
-#: includes/Widgets/Tabs/Widget.php:165
-msgid "Active Indicator Color"
+#: includes/Widgets/PostGrid/Widget.php:199
+msgid "Show Title"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:80
+#: includes/Widgets/PostGrid/Widget.php:227
+msgid "Show Meta (Date)"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:237
+msgid "Show Excerpt"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:247
+msgid "Excerpt Length (words)"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:259
+msgid "Show Read More"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:269
+msgid "Read More Text"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:272
+#: includes/Widgets/PostGrid/Widget.php:539
+#: includes/Widgets/PostGrid/Widget.php:626
+msgid "Read More"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:293
+msgid "Grid"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:301
+msgid "Columns Gap"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:321
+msgid "Card"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:370
+msgid "Content Padding"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:393
+msgid "Image"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:402
+msgid "Height"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:455
+msgid "Hover Color"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:477
+msgid "Meta"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:508
+msgid "Excerpt"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:609
+msgid "No posts found."
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:745
+msgid "Post"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:757
+msgid "All Categories"
+msgstr ""
+
+#: includes/Widgets/PostGrid/Widget.php:790
+msgid "Full"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:74
+#: includes/Widgets/PricingTable/Widget.php:427
+msgid "Header"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:82
+msgid "Plan Title"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:85
+msgid "Professional"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:92
+msgid "Subtitle"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:95
+msgid "For growing teams"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:103
+msgid "Highlight this table as the recommended plan."
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:115
+msgid "Badge Text"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:116
+msgid "Optional ribbon, e.g. \"Popular\". Leave blank to hide."
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:118
+msgid "Popular"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:128
+#: includes/Widgets/PricingTable/Widget.php:145
+#: includes/Widgets/PricingTable/Widget.php:477
+msgid "Price"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:136
+msgid "Currency Symbol"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:155
+msgid "Period"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:157
+msgid "/mo"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:164
+msgid "Original Price"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:165
+msgid "Optional. Shown struck-through beside the price."
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:177
+#: includes/Widgets/PricingTable/Widget.php:531
+msgid "Features"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:187
+msgid "Feature"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:189
+msgid "Feature item"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:196
+msgid "State"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:200
+msgid "Included"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:201
+msgid "Excluded"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:209
+msgid "Feature List"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:215
+msgid "10 GB storage"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:219
+msgid "Unlimited projects"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:223
+msgid "Priority support"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:227
+msgid "Custom domain"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:368
+msgid "Featured Accent"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:369
+msgid "Border and badge colour used when \"Featured\" is on."
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:384
+msgid "Badge"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:454
+msgid "Subtitle Color"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:485
+msgid "Price Color"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:505
+msgid "Period Color"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:517
+msgid "Original Price Color"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:558
+msgid "Row Spacing"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:571
+msgid "Included Icon"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:584
+msgid "Excluded Icon"
+msgstr ""
+
+#: includes/Widgets/PricingTable/Widget.php:706
+msgid "Full Width"
+msgstr ""
+
+#: includes/Widgets/Team/Widget.php:71
 msgid "Team Member"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:88
+#: includes/Widgets/Team/Widget.php:79
 msgid "Photo"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:97
-#: includes/Widgets/Testimonial/Widget.php:97
+#: includes/Widgets/Team/Widget.php:88
 msgid "Name"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:100
+#: includes/Widgets/Team/Widget.php:91
 msgid "John Doe"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:107
+#: includes/Widgets/Team/Widget.php:98
 msgid "Position"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:110
+#: includes/Widgets/Team/Widget.php:101
 msgid "CEO & Founder"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:117
+#: includes/Widgets/Team/Widget.php:108
 msgid "Bio"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:120
+#: includes/Widgets/Team/Widget.php:111
 msgid "A short bio about this team member."
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:127
+#: includes/Widgets/Team/Widget.php:118
 msgid "Name HTML Tag"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:168
+#: includes/Widgets/Team/Widget.php:159
 msgid "Social Links"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:208
-#: includes/Widgets/Testimonial/Widget.php:146
+#: includes/Widgets/Team/Widget.php:183
 msgid "Style"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:216
+#: includes/Widgets/Team/Widget.php:217
 msgid "Photo Size"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:229
+#: includes/Widgets/Team/Widget.php:235
 msgid "Photo Radius"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:243
-#: includes/Widgets/Testimonial/Widget.php:188
+#: includes/Widgets/Team/Widget.php:261
 msgid "Name Color"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:256
+#: includes/Widgets/Team/Widget.php:274
 msgid "Name Typography"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:264
+#: includes/Widgets/Team/Widget.php:282
 msgid "Position Color"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:276
+#: includes/Widgets/Team/Widget.php:294
 msgid "Bio Color"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:287
+#: includes/Widgets/Team/Widget.php:305
 msgid "Social Icon Color"
 msgstr ""
 
-#: includes/Widgets/Team/Widget.php:300
+#: includes/Widgets/Team/Widget.php:318
 msgid "Social Icon Size"
 msgstr ""
 
-#: includes/Widgets/Testimonial/Widget.php:81
-msgid "This product completely changed how our team works. Highly recommended!"
+#: includes/Widgets/_Template/Widget.php:56
+msgid "Template"
 msgstr ""
 
-#: includes/Widgets/Testimonial/Widget.php:100
-msgid "Jane Smith"
+#: includes/Widgets/_Template/Widget.php:99
+msgid "Your title here"
 msgstr ""
 
-#: includes/Widgets/Testimonial/Widget.php:110
-msgid "Marketing Director"
-msgstr ""
-
-#: includes/Widgets/Testimonial/Widget.php:154
-msgid "Content Color"
-msgstr ""
-
-#: includes/Widgets/Testimonial/Widget.php:166
-msgid "Content Typography"
-msgstr ""
-
-#: includes/Widgets/Testimonial/Widget.php:174
-msgid "Image Size"
+#: includes/Widgets/_Template/Widget.php:108
+msgid "A short description goes here."
 msgstr ""

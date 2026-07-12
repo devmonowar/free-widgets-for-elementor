@@ -3,7 +3,7 @@
  * Plugin Name:       Free Widgets For Elementor
  * Plugin URI:        https://wordpress.org/plugins/free-widgets-for-elementor/
  * Description:       A lightweight, 100% free collection of essential Elementor widgets. Performance-first, accessible, and built with clean code. No upsells, ever.
- * Version:           2.0.2
+ * Version:           2.0.3
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Requires Plugins:  elementor
@@ -38,6 +38,11 @@ define( 'FWFE_VERSION', ! empty( $fwfe_data['Version'] ) ? $fwfe_data['Version']
 
 // Minimum supported Elementor version (concept, not scattered hardcodes).
 define( 'FWFE_MINIMUM_ELEMENTOR_VERSION', '3.5.0' );
+
+// Demo Library manifest (hosted on GitHub Pages). Once released this URL is a
+// frozen public API — never change it. Fetched on the Demo Library screen and
+// cached for 6 hours; disclosed as an external service in readme.txt.
+define( 'FWFE_DEMO_MANIFEST_URL', 'https://devmonowar.github.io/wp-plugin-demo-library/free-widgets-for-elementor/demo-library.json' );
 
 /*
 |--------------------------------------------------------------------------

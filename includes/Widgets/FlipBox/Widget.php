@@ -61,15 +61,6 @@ class Widget extends Widget_Base {
 	}
 
 	/**
-	 * Allowed flip directions.
-	 *
-	 * @return array
-	 */
-	private function allowed_directions() {
-		return array( 'left', 'right', 'up', 'down' );
-	}
-
-	/**
 	 * Register the Content controls. (Style controls come from register_style_controls().)
 	 *
 	 * @return void
@@ -711,5 +702,14 @@ class Widget extends Widget_Base {
 			</div>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Allowed flip directions.
+	 *
+	 * @return array
+	 */
+	private function allowed_directions() {
+		return array( 'left', 'right', 'up', 'down' );
 	}
 }

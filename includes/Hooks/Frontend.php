@@ -56,10 +56,13 @@ final class Frontend {
 
 		$css = ':root{';
 		foreach ( $vars as $name => $value ) {
-			$css .= $name . ':' . esc_attr( $value ) . ';';
+			// CSS context: strip characters that could terminate the declaration
+			// or rule, or break out of the <style> element ( ; { } < > \ ).
+			$value = preg_replace( '/[<>{};\\\\]/', '', (string) $value );
+			$css  .= $name . ':' . $value . ';';
 		}
 		$css .= '}';
 
-		echo "<style id='fwfe-global-design'>" . $css . "</style>\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- values escaped above; property names are fixed literals.
+		echo "<style id='fwfe-global-design'>" . $css . "</style>\n"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- values sanitised for CSS context above; property names are fixed literals.
 	}
 }

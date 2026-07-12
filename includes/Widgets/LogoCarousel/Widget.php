@@ -568,6 +568,13 @@ class Widget extends Widget_Base {
 			'carousel',
 			array(
 				'class'                => 'fwfe-carousel fwfe-logo-carousel',
+				'role'                 => 'region',
+				'aria-roledescription' => esc_attr__( 'carousel', 'free-widgets-for-elementor' ),
+				'aria-label'           => esc_attr__( 'Logo carousel', 'free-widgets-for-elementor' ),
+				// Translatable labels consumed by the shared carousel JS.
+				/* translators: %d: slide group number. */
+				'data-dot-label'       => esc_attr__( 'Go to slide group %d', 'free-widgets-for-elementor' ),
+				'data-nav-label'       => esc_attr__( 'Slide navigation', 'free-widgets-for-elementor' ),
 				'data-per-view'        => (string) $per_view,
 				'data-per-view-tablet' => (string) $per_view_tablet,
 				'data-per-view-mobile' => (string) $per_view_mobile,
