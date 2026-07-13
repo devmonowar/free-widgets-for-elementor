@@ -93,8 +93,8 @@ final class Helper {
 			}
 		}
 
-		// Drop enable flags for widgets no longer in the registry (e.g. after a
-		// widget is removed), so counts and lookups only reflect real widgets.
+		// Keep only enable flags for widgets that exist in the registry, so
+		// counts and lookups always reflect the real widget set.
 		if ( isset( $out['enabled_widgets'] ) && is_array( $out['enabled_widgets'] ) ) {
 			$out['enabled_widgets'] = array_intersect_key( $out['enabled_widgets'], self::widget_registry() );
 		}

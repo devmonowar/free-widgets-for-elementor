@@ -95,27 +95,24 @@ These are plain, read-only requests for files. No personal data is collected or 
 
 = 2.0.3 =
 * New: Demo Library — browse ready-made Elementor sections and import any of them as a saved template (with its images) in one click. New demos are added online, so they appear without updating the plugin.
-* A focused, essentials-first widget set — Pricing Table, Flip Box, Team, Call To Action, Countdown Timer, Post Grid and Logo Carousel — each covering a gap in Elementor's built-in widgets.
+* Improvements and refinements across the widgets.
 
 = 2.0.2 =
-* New: six widgets — Pricing Table, Flip Box, Progress Bar, Countdown Timer, Post Grid and Logo Carousel.
-* New: a lightweight, reusable carousel engine that loads only on pages that use it.
+* New widgets, plus a lightweight, reusable carousel engine that loads only on pages that use it.
 * Improved: a consistent internal structure across every widget for easier maintenance.
 
 = 2.0.1 =
 * Initial public release.
-* 10 widgets: Heading, Button, Image, Icon Box, Counter, Team, Testimonial, Accordion, Tabs, Call To Action.
-* Conditional per-widget asset loading.
-* Accessible Tabs and Accordion with keyboard support.
+* Conditional per-widget asset loading — each widget's CSS/JS loads only where it's used.
 * Admin dashboard, per-widget manager, settings and system info.
 
 == Upgrade Notice ==
 
 = 2.0.3 =
-Adds a one-click Demo Library and focuses the plugin on the essential widgets Elementor's free core doesn't include.
+Adds a one-click Demo Library for importing ready-made sections, plus refinements across the widgets.
 
 = 2.0.2 =
-Adds six new widgets: Pricing Table, Flip Box, Progress Bar, Countdown Timer, Post Grid and Logo Carousel.
+New widgets and a lightweight, reusable carousel engine.
 
 = 2.0.1 =
 Initial release of Free Widgets For Elementor.
