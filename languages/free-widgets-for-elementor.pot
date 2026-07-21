@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Free Widgets For Elementor 2.0.3\n"
+"Project-Id-Version: Free Widgets For Elementor 2.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/free-widgets-for-elementor\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-12T19:21:47+02:00\n"
+"POT-Creation-Date: 2026-07-21T20:50:08+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: free-widgets-for-elementor\n"
@@ -352,6 +352,13 @@ msgstr ""
 msgid "Logo Carousel"
 msgstr ""
 
+#: includes/Helpers/Helper.php:38
+#: includes/Widgets/TableOfContents/Widget.php:43
+#: includes/Widgets/TableOfContents/Widget.php:137
+#: includes/Widgets/TableOfContents/Widget.php:580
+msgid "Table of Contents"
+msgstr ""
+
 #: includes/Hooks/Admin.php:70
 #: includes/Hooks/Admin.php:71
 #: includes/Hooks/Elementor.php:44
@@ -408,6 +415,7 @@ msgstr ""
 #: includes/Widgets/LogoCarousel/Widget.php:252
 #: includes/Widgets/PostGrid/Widget.php:178
 #: includes/Widgets/PricingTable/Widget.php:105
+#: includes/Widgets/TableOfContents/Widget.php:160
 msgid "Yes"
 msgstr ""
 
@@ -421,6 +429,7 @@ msgstr ""
 #: includes/Widgets/LogoCarousel/Widget.php:253
 #: includes/Widgets/PostGrid/Widget.php:179
 #: includes/Widgets/PricingTable/Widget.php:106
+#: includes/Widgets/TableOfContents/Widget.php:161
 msgid "No"
 msgstr ""
 
@@ -489,6 +498,7 @@ msgstr ""
 #: includes/Widgets/Cta/Widget.php:161
 #: includes/Widgets/FlipBox/Widget.php:218
 #: includes/Widgets/PricingTable/Widget.php:281
+#: includes/Widgets/TableOfContents/Widget.php:227
 msgid "Box"
 msgstr ""
 
@@ -541,6 +551,7 @@ msgstr ""
 #: includes/Widgets/PricingTable/Widget.php:392
 #: includes/Widgets/PricingTable/Widget.php:635
 #: includes/Widgets/PricingTable/Widget.php:665
+#: includes/Widgets/TableOfContents/Widget.php:251
 msgid "Background"
 msgstr ""
 
@@ -552,6 +563,7 @@ msgstr ""
 #: includes/Widgets/LogoCarousel/Widget.php:305
 #: includes/Widgets/PricingTable/Widget.php:356
 #: includes/Widgets/PricingTable/Widget.php:680
+#: includes/Widgets/TableOfContents/Widget.php:292
 msgid "Padding"
 msgstr ""
 
@@ -563,6 +575,7 @@ msgstr ""
 #: includes/Widgets/PostGrid/Widget.php:419
 #: includes/Widgets/PricingTable/Widget.php:335
 #: includes/Widgets/PricingTable/Widget.php:693
+#: includes/Widgets/TableOfContents/Widget.php:271
 msgid "Border Radius"
 msgstr ""
 
@@ -587,6 +600,11 @@ msgstr ""
 #: includes/Widgets/PostGrid/Widget.php:517
 #: includes/Widgets/PostGrid/Widget.php:563
 #: includes/Widgets/PostGrid/Widget.php:582
+#: includes/Widgets/TableOfContents/Widget.php:323
+#: includes/Widgets/TableOfContents/Widget.php:418
+#: includes/Widgets/TableOfContents/Widget.php:437
+#: includes/Widgets/TableOfContents/Widget.php:456
+#: includes/Widgets/TableOfContents/Widget.php:483
 #: includes/Widgets/_Template/Widget.php:169
 msgid "Color"
 msgstr ""
@@ -606,6 +624,8 @@ msgstr ""
 #: includes/Widgets/FlipBox/Widget.php:452
 #: includes/Widgets/PostGrid/Widget.php:121
 #: includes/Widgets/PostGrid/Widget.php:434
+#: includes/Widgets/TableOfContents/Widget.php:134
+#: includes/Widgets/TableOfContents/Widget.php:315
 #: includes/Widgets/_Template/Widget.php:96
 #: includes/Widgets/_Template/Widget.php:161
 msgid "Title"
@@ -657,6 +677,7 @@ msgid "Button Icon"
 msgstr ""
 
 #: includes/Widgets/Cta/Widget.php:239
+#: includes/Widgets/TableOfContents/Widget.php:126
 #: includes/Widgets/_Template/Widget.php:88
 msgid "Content"
 msgstr ""
@@ -692,6 +713,7 @@ msgstr ""
 #: includes/Widgets/LogoCarousel/Widget.php:318
 #: includes/Widgets/PostGrid/Widget.php:557
 #: includes/Widgets/PricingTable/Widget.php:617
+#: includes/Widgets/TableOfContents/Widget.php:412
 msgid "Normal"
 msgstr ""
 
@@ -719,6 +741,7 @@ msgstr ""
 #: includes/Widgets/LogoCarousel/Widget.php:363
 #: includes/Widgets/PostGrid/Widget.php:576
 #: includes/Widgets/PricingTable/Widget.php:648
+#: includes/Widgets/TableOfContents/Widget.php:431
 msgid "Hover"
 msgstr ""
 
@@ -927,6 +950,7 @@ msgid "Background (Hover)"
 msgstr ""
 
 #: includes/Widgets/LogoCarousel/Widget.php:470
+#: includes/Widgets/TableOfContents/Widget.php:495
 msgid "Size"
 msgstr ""
 
@@ -1264,6 +1288,114 @@ msgstr ""
 
 #: includes/Widgets/PricingTable/Widget.php:706
 msgid "Full Width"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:75
+msgid "Source"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:83
+msgid "Heading Levels"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:101
+msgid "Minimum Headings"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:102
+msgid "Hide the widget on the frontend if fewer headings than this are found."
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:113
+msgid "Content Selector"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:114
+msgid "Advanced. Leave blank to auto-detect the surrounding content. Enter a CSS selector to scan a specific container instead."
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:144
+msgid "Numbering"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:148
+msgid "None"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:149
+msgid "Numbers"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:150
+msgid "Bullets"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:158
+msgid "Collapsible"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:170
+msgid "Collapsed by Default"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:184
+msgid "Behavior"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:192
+msgid "Smooth Scroll"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:202
+msgid "Scroll Offset (px)"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:203
+msgid "Extra space above the heading when jumping to it, e.g. to clear a sticky header."
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:235
+msgid "Max Width"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:346
+msgid "List"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:354
+msgid "Item Spacing"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:367
+msgid "Indent Per Level"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:380
+msgid "Marker Color"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:381
+msgid "Used when Numbering is set to Numbers or Bullets."
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:395
+msgid "Links"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:450
+msgid "Active"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:474
+msgid "Toggle"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:574
+msgid "Toggle table of contents"
+msgstr ""
+
+#: includes/Widgets/TableOfContents/Widget.php:582
+msgid "Add headings to your content to build the table of contents."
 msgstr ""
 
 #: includes/Widgets/Team/Widget.php:71

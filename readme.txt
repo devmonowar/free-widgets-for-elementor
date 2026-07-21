@@ -4,7 +4,7 @@ Tags: elementor, elementor addons, elementor widgets, page builder, pricing tabl
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 Requires Plugins: elementor
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -94,6 +94,9 @@ These are plain, read-only requests for files. No personal data is collected or 
 
 == Changelog ==
 
+= 2.0.4 =
+* New: Table of Contents widget — an auto-generated, clickable outline of your page's headings, with smooth scroll, scrollspy highlighting and an optional collapsible list.
+
 = 2.0.3 =
 * New: Demo Library — browse ready-made Elementor sections and import any of them as a saved template (with its images) in one click. New demos are added online, so they appear without updating the plugin.
 * Improvements and refinements across the widgets.
@@ -108,6 +111,9 @@ These are plain, read-only requests for files. No personal data is collected or 
 * Admin dashboard, per-widget manager, settings and system info.
 
 == Upgrade Notice ==
+
+= 2.0.4 =
+Adds a new Table of Contents widget.
 
 = 2.0.3 =
 Adds a one-click Demo Library for importing ready-made sections, plus refinements across the widgets.
