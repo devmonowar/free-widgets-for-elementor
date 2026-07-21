@@ -9,7 +9,7 @@ A lightweight, **100% free** set of essential [Elementor](https://wordpress.org/
 - **Essential widgets** that fill the gaps Elementor's free core leaves out, grouped under their own **Free Widgets** category.
 - **Performance-first:** each widget's CSS/JS loads only on pages where the widget is actually used (via Elementor's `get_style_depends()` / `get_script_depends()`). Nothing unused is ever queued.
 - **No bloat:** plain CSS and vanilla JavaScript — no jQuery dependency for the widgets, no heavy libraries, **no build step**.
-- **Clean, accessible markup:** semantic HTML, escaped output, focus states, and `prefers-reduced-motion` support on animated widgets (Flip Box, Countdown, Logo Carousel).
+- **Clean, accessible markup:** semantic HTML, escaped output, focus states, and `prefers-reduced-motion` support on animated widgets (Flip Box, Countdown, Logo Carousel, Table of Contents).
 - **Container ready:** works inside Elementor's Flexbox and CSS Grid containers.
 - **Admin dashboard** to enable/disable individual widgets, set global design defaults (border radius, shadow, typography), and view system info — all in a single, lightweight option.
 - **Translation ready & RTL friendly.** 100% free, GPL licensed — no account or license key.
@@ -25,6 +25,7 @@ A lightweight, **100% free** set of essential [Elementor](https://wordpress.org/
 | Countdown Timer | Counts down to a date/time, optional expired message |
 | Post Grid | Responsive grid of posts (image, title, meta, excerpt, read-more) |
 | Logo Carousel | Responsive logo/brand carousel with arrows, dots and autoplay |
+| Table of Contents | Auto-generated, clickable page outline with smooth scroll and scrollspy |
 
 ## Requirements
 

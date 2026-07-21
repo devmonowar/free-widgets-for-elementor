@@ -13,7 +13,7 @@ A lightweight, 100% free set of essential Elementor widgets that the free core d
 
 == Description ==
 
-**Free Widgets For Elementor** adds a focused set of essential widgets that Elementor's free core doesn't ship with — Pricing Table, Flip Box, Team, Call To Action, Countdown Timer, Post Grid and Logo Carousel. Rather than re-creating widgets you already have, it fills the real gaps, cleanly and lightly. It is **100% free forever**: no Pro version, no upsells, no locked features, and no "Upgrade" buttons cluttering your editor.
+**Free Widgets For Elementor** adds a focused set of essential widgets that Elementor's free core doesn't ship with — Pricing Table, Flip Box, Team, Call To Action, Countdown Timer, Post Grid, Logo Carousel and Table of Contents. Rather than re-creating widgets you already have, it fills the real gaps, cleanly and lightly. It is **100% free forever**: no Pro version, no upsells, no locked features, and no "Upgrade" buttons cluttering your editor.
 
 = Why you'll like it =
 
@@ -34,6 +34,7 @@ A lightweight, 100% free set of essential Elementor widgets that the free core d
 5. **Countdown Timer** — counts down to a date and time, with an optional expired message.
 6. **Post Grid** — display your posts in a responsive grid (image, title, meta, excerpt and read-more).
 7. **Logo Carousel** — a responsive logo/brand carousel with arrows, dots and autoplay, powered by a lightweight built-in engine.
+8. **Table of Contents** — an auto-generated, clickable outline of your page's headings, with smooth scroll and an optional collapsible list.
 
 = Admin tools =
 

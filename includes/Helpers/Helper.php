@@ -28,13 +28,14 @@ final class Helper {
 	 */
 	public static function widget_registry() {
 		return array(
-			'pricing-table' => __( 'Pricing Table', 'free-widgets-for-elementor' ),
-			'flip-box'      => __( 'Flip Box', 'free-widgets-for-elementor' ),
-			'team'          => __( 'Team', 'free-widgets-for-elementor' ),
-			'cta'           => __( 'Call To Action', 'free-widgets-for-elementor' ),
-			'countdown'     => __( 'Countdown Timer', 'free-widgets-for-elementor' ),
-			'post-grid'     => __( 'Post Grid', 'free-widgets-for-elementor' ),
-			'logo-carousel' => __( 'Logo Carousel', 'free-widgets-for-elementor' ),
+			'pricing-table'     => __( 'Pricing Table', 'free-widgets-for-elementor' ),
+			'flip-box'          => __( 'Flip Box', 'free-widgets-for-elementor' ),
+			'team'              => __( 'Team', 'free-widgets-for-elementor' ),
+			'cta'               => __( 'Call To Action', 'free-widgets-for-elementor' ),
+			'countdown'         => __( 'Countdown Timer', 'free-widgets-for-elementor' ),
+			'post-grid'         => __( 'Post Grid', 'free-widgets-for-elementor' ),
+			'logo-carousel'     => __( 'Logo Carousel', 'free-widgets-for-elementor' ),
+			'table-of-contents' => __( 'Table of Contents', 'free-widgets-for-elementor' ),
 		);
 	}
 

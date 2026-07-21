@@ -1,0 +1,90 @@
+/**
+ * Free Widgets For Elementor — Table of Contents.
+ *
+ * Structural defaults only. Colours, typography, border, radius, padding and
+ * spacing are driven by the Style controls (Elementor `selectors`), which
+ * override these. --fwfe-toc-indent is set by the Style tab's "Indent Per
+ * Level" control; --level is set per item by table-of-contents.js.
+ */
+
+.fwfe-toc__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	margin-bottom: 12px;
+}
+
+.fwfe-toc__title {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.fwfe-toc__toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+	line-height: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.fwfe-toc__toggle svg {
+	width: 18px;
+	height: 18px;
+	transition: transform 0.2s ease;
+}
+
+.fwfe-toc__toggle[aria-expanded="false"] svg {
+	transform: rotate( -90deg );
+}
+
+.fwfe-toc__list {
+	--fwfe-toc-indent: 16px;
+
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fwfe-toc__list--decimal {
+	padding-left: 1.25em;
+	list-style: decimal;
+}
+
+.fwfe-toc__list--bullet {
+	padding-left: 1.25em;
+	list-style: disc;
+}
+
+.fwfe-toc__item {
+	padding-left: calc( var( --fwfe-toc-indent, 16px ) * var( --level, 0 ) );
+}
+
+.fwfe-toc__link {
+	display: inline-block;
+	text-decoration: none;
+	transition: color 0.15s ease;
+}
+
+.fwfe-toc__link:hover,
+.fwfe-toc__link:focus {
+	text-decoration: underline;
+}
+
+.fwfe-toc__empty {
+	margin: 0;
+	font-size: 14px;
+	opacity: 0.75;
+}
+
+/* ---- Reduced motion ---- */
+@media ( prefers-reduced-motion: reduce ) {
+	.fwfe-toc__toggle svg,
+	.fwfe-toc__link {
+		transition: none;
+	}
+}
