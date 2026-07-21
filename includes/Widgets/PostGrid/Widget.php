@@ -625,7 +625,7 @@ class Widget extends Widget_Base {
 		}
 		$read_more_text = isset( $settings['read_more_text'] ) ? $settings['read_more_text'] : esc_html__( 'Read More', 'free-widgets-for-elementor' );
 
-		$title_tag = ( ! empty( $settings['title_tag'] ) && in_array( $settings['title_tag'], $this->allowed_tags(), true ) ) ? $settings['title_tag'] : 'h3';
+		$title_tag = ( ! empty( $settings['title_tag'] ) && in_array( $settings['title_tag'], $this->allowed_heading_tags(), true ) ) ? $settings['title_tag'] : 'h3';
 		?>
 		<div class="fwfe-post-grid">
 			<?php
@@ -790,14 +790,5 @@ class Widget extends Widget_Base {
 		$options['full'] = esc_html__( 'Full', 'free-widgets-for-elementor' );
 
 		return $options;
-	}
-
-	/**
-	 * Allowed title tags for this widget.
-	 *
-	 * @return array
-	 */
-	private function allowed_tags() {
-		return array( 'h2', 'h3', 'h4', 'h5', 'h6', 'div' );
 	}
 }
