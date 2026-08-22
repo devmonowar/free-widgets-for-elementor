@@ -3,12 +3,12 @@
  * Plugin Name:       Free Widgets For Elementor
  * Plugin URI:        https://wordpress.org/plugins/free-widgets-for-elementor/
  * Description:       A lightweight, 100% free collection of essential Elementor widgets. Performance-first, accessible, and built with clean code. No upsells, ever.
- * Version:           2.0.4
+ * Version:           2.0.5
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Requires Plugins:  elementor
- * Author:            Monowar
- * Author URI:        https://profiles.wordpress.org/kstmonowar/
+ * Author:            Monowar Hossain
+ * Author URI:        https://devmonowar.github.io/
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       free-widgets-for-elementor

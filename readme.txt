@@ -2,9 +2,9 @@
 Contributors: kstmonowar, ksthannan
 Tags: elementor, elementor addons, elementor widgets, page builder, pricing table
 Requires at least: 6.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.0.4
+Stable tag: 2.0.5
 Requires Plugins: elementor
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,6 +14,8 @@ A lightweight, 100% free set of essential Elementor widgets that the free core d
 == Description ==
 
 **Free Widgets For Elementor** adds a focused set of essential widgets that Elementor's free core doesn't ship with — Pricing Table, Flip Box, Team, Call To Action, Countdown Timer, Post Grid, Logo Carousel and Table of Contents. Rather than re-creating widgets you already have, it fills the real gaps, cleanly and lightly. It is **100% free forever**: no Pro version, no upsells, no locked features, and no "Upgrade" buttons cluttering your editor.
+
+**[Browse the demo gallery](https://devmonowar.github.io/wp-plugin-demo-library/free-widgets-for-elementor/)** — see every ready-made section you can import in one click · **[Read the full guide](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/)** — installing it, what each widget does, and how the per-widget asset loading works · **[Development on GitHub](https://github.com/devmonowar/free-widgets-for-elementor)** — report issues or contribute.
 
 = Why you'll like it =
 
@@ -94,6 +96,11 @@ These are plain, read-only requests for files. No personal data is collected or 
 
 == Changelog ==
 
+= 2.0.5 =
+* Fixed: the author link on the Plugins screen went to a WordPress.org profile page instead of the author's own site.
+* Added: links to the demo gallery and the full guide in the plugin description.
+* Tested up to WordPress 7.1.
+
 = 2.0.4 =
 * New: Table of Contents widget — an auto-generated, clickable outline of your page's headings, with smooth scroll, scrollspy highlighting and an optional collapsible list.
 
@@ -111,6 +118,9 @@ These are plain, read-only requests for files. No personal data is collected or 
 * Admin dashboard, per-widget manager, settings and system info.
 
 == Upgrade Notice ==
+
+= 2.0.5 =
+Corrects the author link on the Plugins screen. No functional changes.
 
 = 2.0.4 =
 Adds a new Table of Contents widget.
