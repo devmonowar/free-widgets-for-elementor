@@ -122,29 +122,16 @@ final class Assets {
 	}
 
 	/**
-	 * Enqueue the admin stylesheet/script on the plugin's own admin pages.
+	 * Enqueue the admin stylesheet on the plugin's own admin pages.
+	 *
+	 * The admin screens are plain forms — no AJAX, no inline script — so there
+	 * is no admin JavaScript to load.
 	 *
 	 * @return void
 	 */
 	public static function enqueue_admin() {
-		$version = self::version();
-
 		if ( is_readable( FWFE_DIR . 'assets/css/admin.css' ) ) {
-			wp_enqueue_style( 'fwfe-admin', FWFE_URL . 'assets/css/admin.css', array(), $version );
-		}
-		if ( is_readable( FWFE_DIR . 'assets/js/admin.js' ) ) {
-			wp_enqueue_script( 'fwfe-admin', FWFE_URL . 'assets/js/admin.js', array(), $version, true );
-		}
-	}
-
-	/**
-	 * Enqueue editor-only styles inside the Elementor editor.
-	 *
-	 * @return void
-	 */
-	public static function enqueue_editor() {
-		if ( is_readable( FWFE_DIR . 'assets/css/editor.css' ) ) {
-			wp_enqueue_style( 'fwfe-editor', FWFE_URL . 'assets/css/editor.css', array(), self::version() );
+			wp_enqueue_style( 'fwfe-admin', FWFE_URL . 'assets/css/admin.css', array(), self::version() );
 		}
 	}
 }

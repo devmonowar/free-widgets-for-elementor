@@ -7,7 +7,6 @@
 /.distignore
 /.gitattributes
 /phpcs.xml.dist
-/plan.txt
 /README.md
 # Widget authoring scaffold — kept in git, never shipped.
 /includes/Widgets/_Template

@@ -30,7 +30,6 @@ final class Elementor {
 	public function register() {
 		add_action( 'elementor/elements/categories_registered', array( $this, 'register_category' ) );
 		add_action( 'elementor/widgets/register', array( $this, 'register_widgets' ) );
-		add_action( 'elementor/editor/after_enqueue_styles', array( '\FWFE\Core\Assets', 'enqueue_editor' ) );
 	}
 
 	/**
