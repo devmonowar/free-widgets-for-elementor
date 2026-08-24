@@ -6,6 +6,7 @@
 /.gitignore
 /.distignore
 /.gitattributes
+/composer.json
 /phpcs.xml.dist
 /README.md
 # Widget authoring scaffold — kept in git, never shipped.

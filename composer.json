@@ -1,0 +1,39 @@
+{
+	"name": "devmonowar/free-widgets-for-elementor",
+	"description": "A lightweight, 100% free set of essential Elementor widgets that the free core doesn't include.",
+	"type": "wordpress-plugin",
+	"keywords": [
+		"wordpress",
+		"wordpress-plugin",
+		"elementor",
+		"elementor-addons",
+		"elementor-widgets",
+		"page-builder",
+		"pricing-table"
+	],
+	"homepage": "https://wordpress.org/plugins/free-widgets-for-elementor/",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Monowar Hossain",
+			"email": "devmonowar@gmail.com",
+			"homepage": "https://devmonowar.github.io/",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/devmonowar/free-widgets-for-elementor/issues",
+		"source": "https://github.com/devmonowar/free-widgets-for-elementor",
+		"forum": "https://wordpress.org/support/plugin/free-widgets-for-elementor/",
+		"docs": "https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^1.0 || ^2.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
+	}
+}
