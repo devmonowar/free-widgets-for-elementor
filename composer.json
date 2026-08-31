@@ -32,6 +32,9 @@
 		"composer/installers": "^1.0 || ^2.0"
 	},
 	"config": {
+		"platform": {
+			"php": "7.4.33"
+		},
 		"allow-plugins": {
 			"composer/installers": true
 		}
