@@ -29,12 +29,10 @@ define( 'FWFE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'FWFE_URL', plugin_dir_url( __FILE__ ) );
 define( 'FWFE_BASENAME', plugin_basename( __FILE__ ) );
 
-// Version is read from the plugin header (single source of truth).
-if ( ! function_exists( 'get_file_data' ) ) {
-	require_once ABSPATH . 'wp-admin/includes/file.php';
-}
-$fwfe_data = get_file_data( __FILE__, array( 'Version' => 'Version' ) );
-define( 'FWFE_VERSION', ! empty( $fwfe_data['Version'] ) ? $fwfe_data['Version'] : '2.0.1' );
+// The `Version:` header above is the single source of truth — read it
+// dynamically rather than repeating the number here, so a release only ever
+// changes one line.
+define( 'FWFE_VERSION', get_file_data( __FILE__, array( 'Version' => 'Version' ) )['Version'] );
 
 // Minimum supported Elementor version (concept, not scattered hardcodes).
 define( 'FWFE_MINIMUM_ELEMENTOR_VERSION', '3.5.0' );
