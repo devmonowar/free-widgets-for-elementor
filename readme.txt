@@ -4,7 +4,7 @@ Tags: elementor, elementor addons, elementor widgets, page builder, pricing tabl
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 Requires Plugins: elementor
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -40,7 +40,7 @@ A lightweight, 100% free set of essential Elementor widgets that the free core d
 
 = Admin tools =
 
-A clean dashboard lets you enable/disable individual widgets, set global design defaults (border radius, shadow, typography), toggle SVG and Font Awesome loading, and view system information — all stored in a single, lightweight option.
+A clean dashboard lets you enable/disable individual widgets, set global design defaults (border radius, shadow, typography), allow inline SVG icons, and view system information — all stored in a single, lightweight option.
 
 == Installation ==
 
@@ -96,6 +96,11 @@ These are plain, read-only requests for files. No personal data is collected or 
 
 == Changelog ==
 
+= 2.0.6 =
+* Removed: three settings that did nothing — "Load Font Awesome", "Conditional Asset Loading" and "Debug Mode".
+* Conditional asset loading is unchanged and always on; it never needed a switch.
+* Available on Packagist for Composer-managed sites.
+
 = 2.0.5 =
 * Fixed: the author link on the Plugins screen went to a WordPress.org profile page instead of the author's own site.
 * Added: links to the demo gallery and the full guide in the plugin description.
@@ -118,6 +123,9 @@ These are plain, read-only requests for files. No personal data is collected or 
 * Admin dashboard, per-widget manager, settings and system info.
 
 == Upgrade Notice ==
+
+= 2.0.6 =
+Removes three settings that had no effect. Conditional asset loading still works exactly as before.
 
 = 2.0.5 =
 Corrects the author link on the Plugins screen. No functional changes.

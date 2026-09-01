@@ -33,6 +33,20 @@ A lightweight, **100% free** set of essential [Elementor](https://wordpress.org/
 - PHP 7.4+
 - [Elementor](https://wordpress.org/plugins/elementor/) (free) — Elementor Pro is **not** required.
 
+## Install
+
+**WordPress.org** — Plugins → Add New → search for "Free Widgets For Elementor".
+
+**Composer** — for sites managed with Composer (Bedrock and similar):
+
+```bash
+composer require devmonowar/free-widgets-for-elementor
+```
+
+The package type is `wordpress-plugin`, so [composer/installers](https://github.com/composer/installers)
+drops it into `wp-content/plugins/` for you. Composer is only a delivery mechanism here — the plugin
+itself has no runtime dependency on it and no `vendor/` folder.
+
 ## Architecture
 
 - Namespace `FWFE`, prefix `fwfe_`, CSS class prefix `fwfe-`.
@@ -43,11 +57,13 @@ A lightweight, **100% free** set of essential [Elementor](https://wordpress.org/
 
 ## Development
 
-No build step and no Composer dependency are required to run the plugin. For coding-standards checks, install PHP_CodeSniffer + the WordPress standards globally and run:
+No build step and no Composer dependency are required to *run* the plugin. The dev dependencies are
+only the coding-standards toolchain:
 
 ```bash
-phpcs --standard=phpcs.xml.dist .
-phpcbf --standard=phpcs.xml.dist .   # auto-fix where possible
+composer install
+composer lint       # PHPCS: WordPress-Core + PHP 7.4 compatibility
+composer lint:fix   # phpcbf, auto-fix where possible
 ```
 
 PHP 7.4+ compatible. Coding standard: WordPress-Core (see `phpcs.xml.dist`). CI runs PHP lint (7.4–8.3) + PHPCS on every push.

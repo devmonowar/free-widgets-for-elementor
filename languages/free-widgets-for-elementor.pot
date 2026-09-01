@@ -1,15 +1,15 @@
-# Copyright (C) 2026 Monowar
+# Copyright (C) 2026 Monowar Hossain
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Free Widgets For Elementor 2.0.4\n"
+"Project-Id-Version: Free Widgets For Elementor 2.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/free-widgets-for-elementor\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-21T20:50:08+02:00\n"
+"POT-Creation-Date: 2026-09-01T04:18:00+02:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: free-widgets-for-elementor\n"
@@ -33,12 +33,12 @@ msgstr ""
 
 #. Author of the plugin
 #: free-widgets-for-elementor.php
-msgid "Monowar"
+msgid "Monowar Hossain"
 msgstr ""
 
 #. Author URI of the plugin
 #: free-widgets-for-elementor.php
-msgid "https://profiles.wordpress.org/kstmonowar/"
+msgid "https://devmonowar.github.io/"
 msgstr ""
 
 #: includes/Admin/Dashboard.php:35
@@ -161,8 +161,8 @@ msgid "Sorry, that demo could not be imported. Please try again."
 msgstr ""
 
 #: includes/Admin/Demo_Library.php:286
-#: includes/Admin/Settings.php:236
-#: includes/Admin/Settings.php:285
+#: includes/Admin/Settings.php:195
+#: includes/Admin/Settings.php:237
 msgid "You are not allowed to do this."
 msgstr ""
 
@@ -171,78 +171,50 @@ msgid "General"
 msgstr ""
 
 #: includes/Admin/Settings.php:33
-msgid "Performance"
-msgstr ""
-
-#: includes/Admin/Settings.php:34
 msgid "Developer"
 msgstr ""
 
-#: includes/Admin/Settings.php:35
+#: includes/Admin/Settings.php:34
 msgid "Global Design"
 msgstr ""
 
-#: includes/Admin/Settings.php:60
+#: includes/Admin/Settings.php:59
 msgid "Free Widgets — Settings"
 msgstr ""
 
-#: includes/Admin/Settings.php:116
+#: includes/Admin/Settings.php:115
 msgid "Enable SVG"
 msgstr ""
 
-#: includes/Admin/Settings.php:120
+#: includes/Admin/Settings.php:119
 msgid "Allow inline SVG icons in widgets."
 msgstr ""
 
-#: includes/Admin/Settings.php:125
-msgid "Load Font Awesome"
-msgstr ""
-
-#: includes/Admin/Settings.php:129
-msgid "Enqueue Font Awesome (off by default for performance)."
-msgstr ""
-
-#: includes/Admin/Settings.php:147
-msgid "Conditional Asset Loading"
-msgstr ""
-
-#: includes/Admin/Settings.php:151
-msgid "Load a widget's CSS/JS only on pages that use it (recommended)."
-msgstr ""
-
-#: includes/Admin/Settings.php:169
-msgid "Debug Mode"
-msgstr ""
-
-#: includes/Admin/Settings.php:173
-msgid "Enable extra debugging output for development."
-msgstr ""
-
-#: includes/Admin/Settings.php:178
+#: includes/Admin/Settings.php:137
 msgid "Clear Cache"
 msgstr ""
 
-#: includes/Admin/Settings.php:181
+#: includes/Admin/Settings.php:140
 msgid "Clear plugin cache"
 msgstr ""
 
-#: includes/Admin/Settings.php:199
+#: includes/Admin/Settings.php:158
 msgid "Default Border Radius"
 msgstr ""
 
-#: includes/Admin/Settings.php:203
+#: includes/Admin/Settings.php:162
 msgid "Default Box Shadow"
 msgstr ""
 
-#: includes/Admin/Settings.php:207
+#: includes/Admin/Settings.php:166
 msgid "Default Font Family"
 msgstr ""
 
-#: includes/Admin/Settings.php:223
+#: includes/Admin/Settings.php:182
 msgid "Settings saved."
 msgstr ""
 
-#: includes/Admin/Settings.php:225
+#: includes/Admin/Settings.php:184
 msgid "Cache cleared."
 msgstr ""
 
@@ -361,7 +333,7 @@ msgstr ""
 
 #: includes/Hooks/Admin.php:70
 #: includes/Hooks/Admin.php:71
-#: includes/Hooks/Elementor.php:44
+#: includes/Hooks/Elementor.php:43
 msgid "Free Widgets"
 msgstr ""
 

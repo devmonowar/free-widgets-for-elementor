@@ -30,7 +30,6 @@ final class Settings {
 	private static function tabs() {
 		return array(
 			'general'       => __( 'General', 'free-widgets-for-elementor' ),
-			'performance'   => __( 'Performance', 'free-widgets-for-elementor' ),
 			'developer'     => __( 'Developer', 'free-widgets-for-elementor' ),
 			'global_design' => __( 'Global Design', 'free-widgets-for-elementor' ),
 		);
@@ -87,16 +86,16 @@ final class Settings {
 				<?php wp_nonce_field( 'fwfe_save_settings' ); ?>
 
 				<?php
-				if ( 'general' === $active ) {
-					self::tab_general( $settings );
-				} elseif ( 'performance' === $active ) {
-					self::tab_performance( $settings );
-				} elseif ( 'developer' === $active ) {
+				// The Developer tab is a single action link, so it gets no Save button.
+				if ( 'developer' === $active ) {
 					self::tab_developer( $settings );
-				} else {
+				} elseif ( 'global_design' === $active ) {
 					self::tab_global_design( $settings );
+					submit_button();
+				} else {
+					self::tab_general( $settings );
+					submit_button();
 				}
-				submit_button();
 				?>
 			</form>
 		</div>
@@ -121,37 +120,6 @@ final class Settings {
 					</label>
 				</td>
 			</tr>
-			<tr>
-				<th scope="row"><?php esc_html_e( 'Load Font Awesome', 'free-widgets-for-elementor' ); ?></th>
-				<td>
-					<label>
-						<input type="checkbox" name="fwfe_settings[general_settings][load_fontawesome]" value="1" <?php checked( ! empty( $s['general_settings']['load_fontawesome'] ) ); ?> />
-						<?php esc_html_e( 'Enqueue Font Awesome (off by default for performance).', 'free-widgets-for-elementor' ); ?>
-					</label>
-				</td>
-			</tr>
-		</table>
-		<?php
-	}
-
-	/**
-	 * Performance tab fields.
-	 *
-	 * @param array $s Settings.
-	 * @return void
-	 */
-	private static function tab_performance( $s ) {
-		?>
-		<table class="form-table" role="presentation">
-			<tr>
-				<th scope="row"><?php esc_html_e( 'Conditional Asset Loading', 'free-widgets-for-elementor' ); ?></th>
-				<td>
-					<label>
-						<input type="checkbox" name="fwfe_settings[performance_settings][conditional_assets]" value="1" <?php checked( ! empty( $s['performance_settings']['conditional_assets'] ) ); ?> />
-						<?php esc_html_e( 'Load a widget\'s CSS/JS only on pages that use it (recommended).', 'free-widgets-for-elementor' ); ?>
-					</label>
-				</td>
-			</tr>
 		</table>
 		<?php
 	}
@@ -165,15 +133,6 @@ final class Settings {
 	private static function tab_developer( $s ) {
 		?>
 		<table class="form-table" role="presentation">
-			<tr>
-				<th scope="row"><?php esc_html_e( 'Debug Mode', 'free-widgets-for-elementor' ); ?></th>
-				<td>
-					<label>
-						<input type="checkbox" name="fwfe_settings[developer_settings][debug_mode]" value="1" <?php checked( ! empty( $s['developer_settings']['debug_mode'] ) ); ?> />
-						<?php esc_html_e( 'Enable extra debugging output for development.', 'free-widgets-for-elementor' ); ?>
-					</label>
-				</td>
-			</tr>
 			<tr>
 				<th scope="row"><?php esc_html_e( 'Clear Cache', 'free-widgets-for-elementor' ); ?></th>
 				<td>
@@ -248,14 +207,7 @@ final class Settings {
 
 		switch ( $section ) {
 			case 'general':
-				$settings['general_settings']['enable_svg']       = empty( $raw['general_settings']['enable_svg'] ) ? 0 : 1;
-				$settings['general_settings']['load_fontawesome'] = empty( $raw['general_settings']['load_fontawesome'] ) ? 0 : 1;
-				break;
-			case 'performance':
-				$settings['performance_settings']['conditional_assets'] = empty( $raw['performance_settings']['conditional_assets'] ) ? 0 : 1;
-				break;
-			case 'developer':
-				$settings['developer_settings']['debug_mode'] = empty( $raw['developer_settings']['debug_mode'] ) ? 0 : 1;
+				$settings['general_settings']['enable_svg'] = empty( $raw['general_settings']['enable_svg'] ) ? 0 : 1;
 				break;
 			case 'global_design':
 				$settings['global_design']['border_radius'] = isset( $raw['global_design']['border_radius'] ) ? sanitize_text_field( $raw['global_design']['border_radius'] ) : '';

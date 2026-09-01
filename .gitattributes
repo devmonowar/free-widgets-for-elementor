@@ -14,3 +14,8 @@
 /.gitattributes  export-ignore
 /.gitignore      export-ignore
 /phpcs.xml.dist  export-ignore
+
+# Widget authoring scaffold — kept in git, shipped nowhere.
+/includes/Widgets/_Template        export-ignore
+/assets/css/widgets/_template.css  export-ignore
+/assets/js/widgets/_template.js    export-ignore

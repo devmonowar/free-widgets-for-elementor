@@ -51,24 +51,17 @@ final class Helper {
 		}
 
 		return array(
-			'enabled_widgets'      => $enabled,
-			'general_settings'     => array(
-				'enable_svg'       => 0,
-				'load_fontawesome' => 0,
+			'enabled_widgets'  => $enabled,
+			'general_settings' => array(
+				'enable_svg' => 0,
 			),
-			'performance_settings' => array(
-				'conditional_assets' => 1,
-			),
-			'developer_settings'   => array(
-				'debug_mode' => 0,
-			),
-			'global_design'        => array(
+			'global_design'    => array(
 				'border_radius' => '',
 				'box_shadow'    => '',
 				'typography'    => '',
 			),
-			'plugin_version'       => defined( 'FWFE_VERSION' ) ? FWFE_VERSION : '',
-			'install_time'         => 0,
+			'plugin_version'   => defined( 'FWFE_VERSION' ) ? FWFE_VERSION : '',
+			'install_time'     => 0,
 		);
 	}
 
