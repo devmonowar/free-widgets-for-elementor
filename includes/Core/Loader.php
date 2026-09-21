@@ -108,6 +108,7 @@ final class Loader {
 				'Admin/Demo_Library.php',
 				'Admin/Settings.php',
 				'Admin/System_Info.php',
+				'Admin/ReviewNotice.php',
 			)
 		);
 	}

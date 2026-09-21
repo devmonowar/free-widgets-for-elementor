@@ -42,6 +42,8 @@ final class Admin {
 		add_action( 'admin_post_fwfe_save_settings', array( '\FWFE\Admin\Settings', 'handle_save' ) );
 		add_action( 'admin_post_fwfe_clear_cache', array( '\FWFE\Admin\Settings', 'handle_clear_cache' ) );
 		add_action( 'admin_post_' . Demo_Library::IMPORT_ACTION, array( '\FWFE\Admin\Demo_Library', 'handle_import' ) );
+
+		( new \FWFE\Admin\ReviewNotice() )->register();
 	}
 
 	/**
