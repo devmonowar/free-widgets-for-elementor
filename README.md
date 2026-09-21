@@ -55,6 +55,12 @@ itself has no runtime dependency on it and no `vendor/` folder.
 - `includes/Core/` (Plugin, Loader, Assets) · `includes/Hooks/` (Admin, Frontend, Elementor) · `includes/Base/Widget_Base.php` · `includes/Helpers/` · `includes/Admin/` · `includes/Widgets/<Name>/Widget.php`.
 - Single option `fwfe_settings`. Clean uninstall (`uninstall.php`).
 
+## Links
+
+- Plugin page: https://devmonowar.github.io/free-widgets-for-elementor/
+- Guide: https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/
+- WordPress.org: https://wordpress.org/plugins/free-widgets-for-elementor/
+
 ## Development
 
 No build step and no Composer dependency are required to *run* the plugin. The dev dependencies are
