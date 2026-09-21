@@ -75,6 +75,22 @@ Yes, all widgets are built to work inside Elementor containers.
 
 The optional **Demo Library** screen loads ready-made sections from an online library, so new demos can be added without updating the plugin. It only connects when you open the Demo Library screen or import a demo. See "External services" below.
 
+= Can I disable widgets I don't use? =
+
+Yes. The plugin dashboard lets you enable or disable each widget individually, so only the widgets you need are registered in the editor.
+
+= Does it work with my theme and other Elementor addons? =
+
+Yes. The widgets are self-contained and do not override theme styles or other addons' widgets. They follow Elementor's standard widget API, so they work with any theme that supports Elementor.
+
+= Is the plugin translation-ready and RTL friendly? =
+
+Yes. All strings are translation-ready and the widget styles work in right-to-left languages.
+
+= Do I need an account or license key? =
+
+No. There is no account, no license key, and no activation step. Install, activate, and use.
+
 == External services ==
 
 This plugin includes an optional **Demo Library** that loads ready-made Elementor sections from a remote service hosted on GitHub Pages: [devmonowar.github.io/wp-plugin-demo-library](https://devmonowar.github.io/wp-plugin-demo-library/)
