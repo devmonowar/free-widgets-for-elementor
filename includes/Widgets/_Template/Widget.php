@@ -140,16 +140,9 @@ class Widget extends Widget_Base {
 		/*
 		 * MULTI-ITEM WIDGETS (pricing features, price-list rows, etc.):
 		 * use a Repeater control — the plugin standard for lists.
-		 *
-		 * $repeater = new \Elementor\Repeater();
-		 * $repeater->add_control( 'item_text', array( 'type' => Controls_Manager::TEXT, ... ) );
-		 * $this->add_control( 'items', array(
-		 *     'type'    => Controls_Manager::REPEATER,
-		 *     'fields'  => $repeater->get_controls(),
-		 *     'default' => array( ... ),
-		 *     'title_field' => '{{{ item_text }}}',
-		 * ) );
-		 * Then loop $settings['items'] in render().
+		 * Build an Elementor Repeater with an item_text control, register
+		 * it as an items control of type REPEATER with a title field,
+		 * then loop the items in render().
 		 */
 
 		$this->end_controls_section();

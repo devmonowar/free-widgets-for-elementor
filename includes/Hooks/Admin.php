@@ -34,6 +34,7 @@ final class Admin {
 	public function register() {
 		add_action( 'admin_menu', array( $this, 'register_menu' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue' ) );
+		add_action( 'admin_footer', array( $this, 'external_menu_targets' ) );
 
 		// "Settings" link on the Plugins list row.
 		add_filter( 'plugin_action_links_' . FWFE_BASENAME, array( $this, 'action_links' ) );
@@ -138,6 +139,25 @@ final class Admin {
 			'manage_options',
 			'https://wordpress.org/support/plugin/free-widgets-for-elementor/'
 		);
+	}
+
+	/**
+	 * Open the external Documentation/Support menu links in a new tab.
+	 * add_submenu_page() has no target parameter, so this is done with a
+	 * few lines of JS on the plugin's own screens only.
+	 *
+	 * @return void
+	 */
+	public function external_menu_targets() {
+		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
+		if ( ! $screen || ( 'toplevel_page_' . self::MENU_SLUG !== $screen->id && 0 !== strpos( $screen->id, self::MENU_SLUG . '_page_' ) ) ) {
+			return;
+		}
+		?>
+		<script>
+		document.querySelectorAll('#adminmenu a[href^="https://wordpress.org/plugins/free-widgets-for-elementor"],#adminmenu a[href^="https://wordpress.org/support/plugin/free-widgets-for-elementor"]').forEach(function(a){a.target='_blank';a.rel='noopener noreferrer';});
+		</script>
+		<?php
 	}
 
 	/**

@@ -60,21 +60,17 @@ final class Settings {
 			<?php self::notice(); ?>
 
 			<h2 class="nav-tab-wrapper">
-				<?php foreach ( $tabs as $key => $label ) : ?>
-					<a href="
-					<?php
-					echo esc_url(
-						add_query_arg(
-							array(
-								'page' => self::SLUG,
-								'tab'  => $key,
-							),
-							admin_url( 'admin.php' )
-						)
+				<?php
+				foreach ( $tabs as $key => $label ) :
+					$tab_url = add_query_arg(
+						array(
+							'page' => self::SLUG,
+							'tab'  => $key,
+						),
+						admin_url( 'admin.php' )
 					);
 					?>
-								"
-						class="nav-tab <?php echo $active === $key ? 'nav-tab-active' : ''; ?>">
+					<a href="<?php echo esc_url( $tab_url ); ?>" class="nav-tab <?php echo $active === $key ? 'nav-tab-active' : ''; ?>">
 						<?php echo esc_html( $label ); ?>
 					</a>
 				<?php endforeach; ?>
@@ -88,7 +84,7 @@ final class Settings {
 				<?php
 				// The Developer tab is a single action link, so it gets no Save button.
 				if ( 'developer' === $active ) {
-					self::tab_developer( $settings );
+					self::tab_developer();
 				} elseif ( 'global_design' === $active ) {
 					self::tab_global_design( $settings );
 					submit_button();
@@ -127,10 +123,9 @@ final class Settings {
 	/**
 	 * Developer tab fields.
 	 *
-	 * @param array $s Settings.
 	 * @return void
 	 */
-	private static function tab_developer( $s ) {
+	private static function tab_developer() {
 		?>
 		<table class="form-table" role="presentation">
 			<tr>

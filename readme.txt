@@ -4,7 +4,7 @@ Tags: elementor, elementor addons, elementor widgets, page builder, pricing tabl
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 2.0.6
+Stable tag: 2.0.7
 Requires Plugins: elementor
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -112,6 +112,12 @@ These are plain, read-only requests for files. No personal data is collected or 
 
 == Changelog ==
 
+= 2.0.7 =
+* Added: review notice (15-day) + footer rating link.
+* Fixed: uninstall now removes review state and demo transients on all sites (multisite).
+* Fixed: demo import sideloads images before creating the template, so a timeout can't leave a half-imported template; manifest failures are cached 10 minutes.
+* Performance: version constant hardcoded (no per-request file read).
+
 = 2.0.6 =
 * Removed: three settings that did nothing — "Load Font Awesome", "Conditional Asset Loading" and "Debug Mode".
 * Conditional asset loading is unchanged and always on; it never needed a switch.
@@ -139,6 +145,9 @@ These are plain, read-only requests for files. No personal data is collected or 
 * Admin dashboard, per-widget manager, settings and system info.
 
 == Upgrade Notice ==
+
+= 2.0.7 =
+Review notice added; uninstall and demo import reliability fixes. No settings change needed.
 
 = 2.0.6 =
 Removes three settings that had no effect. Conditional asset loading still works exactly as before.

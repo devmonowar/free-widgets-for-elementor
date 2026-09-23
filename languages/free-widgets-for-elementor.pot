@@ -1457,3 +1457,35 @@ msgstr ""
 #: includes/Widgets/_Template/Widget.php:108
 msgid "A short description goes here."
 msgstr ""
+#: includes/Admin/ReviewNotice.php:72
+msgid "Enjoying Free Widgets? Leave us a %1$s&#9733;&#9733;&#9733;&#9733;&#9733; review%2$s — it keeps development going."
+msgstr ""
+
+#: includes/Admin/ReviewNotice.php:143
+msgid "Enjoying Free Widgets?"
+msgstr ""
+
+#: includes/Admin/ReviewNotice.php:144
+msgid "A quick 5-star review helps other people find the plugin and keeps development going. Thank you!"
+msgstr ""
+
+#: includes/Admin/ReviewNotice.php:146
+msgid "Did you get a chance to leave that review?"
+msgstr ""
+
+#: includes/Admin/ReviewNotice.php:147
+msgid "If you did — thank you! Confirm below and we will never ask again."
+msgstr ""
+
+#: includes/Admin/ReviewNotice.php:155
+msgid "Yes, I left a review"
+msgstr ""
+
+#: includes/Admin/ReviewNotice.php:159
+msgid "Maybe later"
+msgstr ""
+
+#: includes/Admin/ReviewNotice.php:162
+msgid "Rate it ★★★★★"
+msgstr ""
+

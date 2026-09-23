@@ -32,6 +32,17 @@ final class Demo_Library {
 	const TRANSIENT = 'fwfe_demo_manifest';
 
 	/**
+	 * Transient key for the failure flag (so a down host doesn't cost
+	 * a fresh 10s request on every page load).
+	 */
+	const FAILED_TRANSIENT = 'fwfe_demo_manifest_failed';
+
+	/**
+	 * Failure flag lifetime.
+	 */
+	const FAILED_TTL = 10 * MINUTE_IN_SECONDS;
+
+	/**
 	 * Manifest cache lifetime.
 	 */
 	const CACHE_TTL = 6 * HOUR_IN_SECONDS;
@@ -63,6 +74,9 @@ final class Demo_Library {
 			if ( is_array( $cached ) ) {
 				return $cached;
 			}
+			if ( get_transient( self::FAILED_TRANSIENT ) ) {
+				return new \WP_Error( 'fwfe_http', __( 'The demo library could not be reached.', 'free-widgets-for-elementor' ) );
+			}
 		}
 
 		// wp_safe_remote_get validates the host (blocks internal/loopback by
@@ -76,9 +90,11 @@ final class Demo_Library {
 		);
 
 		if ( is_wp_error( $response ) ) {
+			set_transient( self::FAILED_TRANSIENT, 1, self::FAILED_TTL );
 			return $response;
 		}
 		if ( 200 !== (int) wp_remote_retrieve_response_code( $response ) ) {
+			set_transient( self::FAILED_TRANSIENT, 1, self::FAILED_TTL );
 			return new \WP_Error( 'fwfe_http', __( 'The demo library could not be reached.', 'free-widgets-for-elementor' ) );
 		}
 
@@ -88,6 +104,7 @@ final class Demo_Library {
 		}
 
 		set_transient( self::TRANSIENT, $data, self::CACHE_TTL );
+		delete_transient( self::FAILED_TRANSIENT );
 		return $data;
 	}
 
@@ -370,6 +387,22 @@ final class Demo_Library {
 	 * @return int New template post ID, or 0 on failure.
 	 */
 	private static function create_template( $content, $title, $type ) {
+		// Sideload images BEFORE creating the post: downloads can outlast
+		// max_execution_time, and a timeout mid-download must not leave a
+		// half-imported template behind (attachments go in unattached first).
+		$urls = array();
+		self::collect_image_urls( $content, $urls );
+		$map = array();
+		foreach ( array_keys( $urls ) as $src ) {
+			$att_id      = self::sideload_image( $src, 0 );
+			$map[ $src ] = $att_id
+				? array(
+					'id'  => $att_id,
+					'url' => wp_get_attachment_url( $att_id ),
+				)
+				: null;
+		}
+
 		$post_id = wp_insert_post(
 			array(
 				'post_type'   => 'elementor_library',
@@ -382,9 +415,20 @@ final class Demo_Library {
 			return 0;
 		}
 
-		// Sideload images and rewrite each media object's id + url in the tree.
-		$map = array();
-		self::rewrite_images( $content, $map, $post_id );
+		// Attach the sideloaded images to the new template.
+		foreach ( $map as $media ) {
+			if ( ! empty( $media['id'] ) ) {
+				wp_update_post(
+					array(
+						'ID'          => (int) $media['id'],
+						'post_parent' => (int) $post_id,
+					)
+				);
+			}
+		}
+
+		// Rewrite each media object's id + url in the tree (no downloads here).
+		self::rewrite_images( $content, $map );
 
 		update_post_meta( $post_id, '_elementor_data', wp_slash( wp_json_encode( $content ) ) );
 		update_post_meta( $post_id, '_elementor_edit_mode', 'builder' );
@@ -403,34 +447,51 @@ final class Demo_Library {
 	}
 
 	/**
+	 * Collect unique remote image URLs from an Elementor node tree.
+	 *
+	 * @param array $node Node tree.
+	 * @param array $urls URL => true map (passed by reference).
+	 * @return void
+	 */
+	private static function collect_image_urls( $node, &$urls ) {
+		if ( ! is_array( $node ) ) {
+			return;
+		}
+		if ( array_key_exists( 'id', $node ) && array_key_exists( 'url', $node ) && is_string( $node['url'] ) && '' !== $node['url'] ) {
+			$url = esc_url_raw( $node['url'] );
+			if ( $url && in_array( wp_parse_url( $url, PHP_URL_SCHEME ), array( 'http', 'https' ), true ) ) {
+				$urls[ $url ] = true;
+			}
+			return;
+		}
+		foreach ( $node as $child ) {
+			if ( is_array( $child ) ) {
+				self::collect_image_urls( $child, $urls );
+			}
+		}
+	}
+
+	/**
 	 * Walk an Elementor node tree, sideload every image and rewrite its id/url.
 	 *
 	 * An Elementor media object is an array carrying both `id` and `url`; link
 	 * controls carry `url` but no `id`, so they are left untouched.
 	 *
 	 * @param array $node    Node (passed by reference, mutated in place).
-	 * @param array $map     URL => array( id, url ) cache, so each source image
-	 *                       is downloaded only once.
-	 * @param int   $post_id Template post the attachments are attached to.
+	 * @param array $map     URL => array( id, url ) map (prebuilt, no downloads).
 	 * @return void
 	 */
-	private static function rewrite_images( &$node, &$map, $post_id ) {
+	private static function rewrite_images( &$node, &$map ) {
 		if ( ! is_array( $node ) ) {
 			return;
 		}
 
 		// Is this node itself a media object { id, url }?
 		if ( array_key_exists( 'id', $node ) && array_key_exists( 'url', $node ) && is_string( $node['url'] ) && '' !== $node['url'] ) {
-			$src = $node['url'];
-			if ( ! isset( $map[ $src ] ) ) {
-				$att_id      = self::sideload_image( $src, $post_id );
-				$map[ $src ] = $att_id
-					? array(
-						'id'  => $att_id,
-						'url' => wp_get_attachment_url( $att_id ),
-					)
-					: null;
-			}
+			// Same normalization as collect_image_urls(): the map keys are
+			// escaped, so a raw URL with space/&amp;/etc. must be escaped
+			// here too or the lookup silently misses.
+			$src = esc_url_raw( $node['url'] );
 			if ( ! empty( $map[ $src ] ) ) {
 				$node['id']  = $map[ $src ]['id'];
 				$node['url'] = $map[ $src ]['url'];
@@ -440,7 +501,7 @@ final class Demo_Library {
 
 		foreach ( $node as &$child ) {
 			if ( is_array( $child ) ) {
-				self::rewrite_images( $child, $map, $post_id );
+				self::rewrite_images( $child, $map );
 			}
 		}
 		unset( $child );

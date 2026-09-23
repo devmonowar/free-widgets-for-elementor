@@ -56,8 +56,10 @@ final class Frontend {
 
 		$css = ':root{';
 		foreach ( $vars as $name => $value ) {
-			// CSS context: strip characters that could terminate the declaration
-			// or rule, or break out of the <style> element ( ; { } < > \ ).
+			// CSS context: strip the characters that would terminate the
+			// declaration or break out of the <style> element ( ; { } < > \ ).
+			// This is not a full CSS sanitizer — the rest ( ) : / * stays —
+			// but only admins with manage_options can save these values.
 			$value = preg_replace( '/[<>{};\\\\]/', '', (string) $value );
 			$css  .= $name . ':' . $value . ';';
 		}

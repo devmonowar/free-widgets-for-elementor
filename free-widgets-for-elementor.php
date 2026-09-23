@@ -3,7 +3,7 @@
  * Plugin Name:       Free Widgets For Elementor
  * Plugin URI:        https://devmonowar.github.io/free-widgets-for-elementor/
  * Description:       A lightweight, 100% free collection of essential Elementor widgets. Performance-first, accessible, and built with clean code. No upsells, ever.
- * Version:           2.0.6
+ * Version:           2.0.7
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Requires Plugins:  elementor
@@ -29,10 +29,10 @@ define( 'FWFE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'FWFE_URL', plugin_dir_url( __FILE__ ) );
 define( 'FWFE_BASENAME', plugin_basename( __FILE__ ) );
 
-// The `Version:` header above is the single source of truth — read it
-// dynamically rather than repeating the number here, so a release only ever
-// changes one line.
-define( 'FWFE_VERSION', get_file_data( __FILE__, array( 'Version' => 'Version' ) )['Version'] );
+// Hardcoded (not get_file_data): reading the header costs fopen + fread +
+// regex on every page load, frontend included. Keep in sync with the
+// `Version:` header above + readme.txt Stable tag + changelog on release.
+define( 'FWFE_VERSION', '2.0.7' );
 
 // Minimum supported Elementor version (concept, not scattered hardcodes).
 define( 'FWFE_MINIMUM_ELEMENTOR_VERSION', '3.5.0' );
